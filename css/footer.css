@@ -3,3 +3,46 @@ footer{
    background-color: rgb(21, 43, 21);
    color: white;
 }
+
+
+footer .container{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.btn-donate{
+
+   width: 8rem;
+   height:5rem ;
+   border-radius: 10px;
+   border: none;
+   background-color: rgb(59, 57, 57);
+   padding: 10px;
+   overflow: hidden;
+   margin: 2px;
+}
+.btn-donate{
+
+   width: 8rem;
+   height:5rem ;
+   border-radius: 10px;
+   border: none;
+   background-color: rgb(59, 57, 57);
+   padding: 10px;
+   overflow: hidden;
+   margin: 2px;
+}
+.btn-donate:hover{
+
+   opacity: 0.8;
+ 
+}
+
+.btn-donate img{
+
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+  
+}
