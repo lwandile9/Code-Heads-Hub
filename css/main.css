@@ -1,0 +1,76 @@
+
+
+
+
+
+/**** Events *******/
+
+.cards-container{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:10px;
+}
+
+.events-title{
+
+  margin: 10px;
+  font-size:30px;
+  font-weight: 900;
+  color: rgb(7, 54, 14);
+
+}
+
+.card{
+
+   background-color: rgb(255, 255, 255);
+   width: 300px;
+   height: 21.5rem;
+   line-height: 1.4em;
+   overflow: hidden;
+   border-radius: 4px;
+   padding: 10px;
+   color: rgb(56, 56, 121);
+   box-shadow: 6px 5px 20px rgba(0, 0, 0, 0.1);
+   font-weight: 600;
+   margin-bottom: 10px;
+
+}
+
+.card-image{
+  height: 200px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+ .card img{
+
+    width: 100%;
+    object-fit: contain;
+    
+ }
+
+ .card-title{
+
+   background-color: rgb(238, 212, 212);
+   width: 80px;
+   height:25px;
+   align-content: center;
+   padding-left: 5px;
+   border-radius: 5px;
+ }
+
+ .company{
+
+    font-weight: 100;
+ }
+ .start-date{
+
+   font-weight: 300;
+ }
+
+ .card-footer :nth-child(2){
+
+  margin-bottom: -15px;
+
+
+ }
