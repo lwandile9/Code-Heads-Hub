@@ -7,6 +7,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap:10px;
+ transition: all 0.15s ease-in-out;
 }
 
 .events-title{
@@ -32,7 +33,15 @@
    font-weight: 600;
    margin:2px auto;
    margin-bottom: 10px;
+   transition: all 0.15s ease-in-out;
+   cursor: pointer;
    
+
+}
+.card:hover{
+
+   box-shadow: 8px 7px 17px rgba(0, 0, 0, 0.2);
+   transform: scale(1.1);
 
 }
 
