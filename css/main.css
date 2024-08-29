@@ -1,8 +1,5 @@
 
 
-
-
-
 /**** Events *******/
 
 .cards-container{
@@ -24,9 +21,9 @@
 .card{
 
    background-color: rgb(255, 255, 255);
-   width: 300px;
+   width:20rem;
    height: 21.5rem;
-   line-height: 1.4em;
+   line-height: 1.4rem;
    overflow: hidden;
    border-radius: 4px;
    padding: 10px;
@@ -52,7 +49,6 @@
  }
 
  .card-title{
-
    background-color: rgb(238, 212, 212);
    width: 80px;
    height:25px;
@@ -76,6 +72,12 @@
 
  }
 
+
+
+
+
+
+ /***** Responsiveness Events ***/
 
  @media screen and (max-width :950px) {
 
