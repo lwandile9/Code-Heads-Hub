@@ -7,7 +7,7 @@ footer{
 
 footer .container{
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr ;
 }
 
 
@@ -17,26 +17,23 @@ footer .container{
    height:5rem ;
    border-radius: 10px;
    border: none;
-   background-color: rgb(59, 57, 57);
+   background-color:transparent;
    padding: 10px;
    overflow: hidden;
    margin: 2px;
-}
-.btn-donate{
+   transition: 0.15s;
+   
 
-   width: 8rem;
-   height:5rem ;
-   border-radius: 10px;
-   border: none;
-   background-color: rgb(59, 57, 57);
-   padding: 10px;
-   overflow: hidden;
-   margin: 2px;
+}
+.btn-donate:hover{
+
+   transform: scale(1.1);
+ 
 }
 .btn-donate:hover{
 
    opacity: 0.8;
- 
+
 }
 
 .btn-donate img{
@@ -46,3 +43,49 @@ footer .container{
     height: 100%;
   
 }
+
+.fa-brands{
+
+   font-size: 2.3rem;
+   padding: 5px;
+   border-radius: 3px;
+ }
+ .fa-brands:hover{
+
+   font-size: 2.3rem;
+   background-color: rgb(5, 58, 5);
+   
+ }
+
+ footer p, a{
+    color: white;
+ }
+
+ .contact-us-title , .title{
+     font-weight: 700;
+     font-size: 24px;
+ }
+
+ .contact-us{
+
+     grid-column: 1/span 2;
+     display:  flex;
+     justify-content:space-between;
+ }
+
+
+ .legal{
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+ }
+ .legal a{
+   font-size:16px;
+   font-style: italic;
+   padding-left: 10px;
+ }
+ .legal a:hover{
+   text-decoration: underline;
+   
+ }

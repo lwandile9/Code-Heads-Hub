@@ -1,5 +1,3 @@
-
-
 /**** Events *******/
 
 .cards-container{
@@ -84,8 +82,6 @@
 
 
 
-
-
  /***** Responsiveness Events ***/
 
  @media screen and (max-width :950px) {
@@ -106,5 +102,10 @@
     grid-template-columns: 1fr;
     gap:8px;
   }
+
+  footer .container{
+
+    grid-template-columns: 1fr 1fr ;
+ }
   
  }
