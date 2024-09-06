@@ -1,0 +1,57 @@
+body{
+    background-color:
+rgb(235, 239, 248)
+}
+
+
+.formnjabulo{
+    display:none;
+}
+
+#toggle:checked + form{
+    display:block;
+}
+
+.contentimages{
+display:flex ;
+gap:10px;
+margin-left: 200px ;
+}
+
+#anathi{
+    border-radius: 50%;
+    width :250px;
+     height:200px ;
+}
+
+#njabulo{
+    border-radius: 50%;
+    width :250px;
+     height:200px ;
+}
+
+#gcina{
+    border-radius: 50%;
+    width :250px;
+     height:200px ;
+}
+
+#lwandile{
+    border-radius: 50%;
+    width :250px;
+     height:200px ;
+}
+
+#milani
+{
+    border-radius: 50%;
+    width :250px;
+     height:200px ;
+}
+
+@media screen and ( max-width:650px) {
+    .contentimages{
+     flex-direction: column;
+      
+        }
+}
