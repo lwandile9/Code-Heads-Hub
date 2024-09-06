@@ -1,0 +1,22 @@
+*{
+
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-decoration: none;
+   
+
+}
+
+body{
+
+   background-color: rgb(216, 225, 233);
+}
+
+
+.container{
+     padding: 16px;
+     margin: 2px auto;
+     max-width: 1300px;
+    
+}

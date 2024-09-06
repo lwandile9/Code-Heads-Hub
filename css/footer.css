@@ -1,0 +1,109 @@
+footer{
+
+   background-color: rgb(21, 43, 21);
+   color: white;
+}
+
+
+footer .container{
+   display: grid;
+   grid-template-columns: 1fr 1fr ;
+}
+
+
+.btn-donate{
+
+   width: 8rem;
+   height:5rem ;
+   border-radius: 10px;
+   border: none;
+   background-color:transparent;
+   padding: 10px;
+   overflow: hidden;
+   margin: 2px;
+   transition: 0.15s;
+   
+
+}
+.btn-donate:hover{
+
+   transform: scale(1.1);
+ 
+}
+.btn-donate:hover{
+
+   opacity: 0.8;
+
+}
+
+.btn-donate img{
+
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+  
+}
+
+.fa-brands{
+
+   font-size: 2.3rem;
+   padding: 5px;
+   border-radius: 3px;
+ }
+ .fa-brands:hover{
+
+   font-size: 2.3rem;
+   background-color: rgb(5, 58, 5);
+   
+ }
+
+ footer p, a{
+    color: white;
+ }
+
+ .contact-us-title , .title{
+     font-weight: 650;
+     font-size: 18px;
+ }
+
+ .contact-us{
+
+     grid-column: 1/span 2;
+     display:  flex;
+     justify-content:space-between;
+ }
+
+
+ .legal{
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+ }
+ .legal a{
+   font-size:12px;
+   font-style: italic;
+   padding-left: 10px;
+ }
+ .legal a:hover{
+   text-decoration: underline;
+   
+ }
+
+ .contact-info{
+
+   display: flex;
+   gap:1rem;
+   padding-top:3px;
+ }
+
+ .donate-button-container{
+
+   margin-left: 10%;
+ }
+
+ .copy-right{
+
+    text-align: center;
+    grid-column: 1/-2;
+ }
