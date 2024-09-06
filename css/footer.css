@@ -62,8 +62,8 @@ footer .container{
  }
 
  .contact-us-title , .title{
-     font-weight: 700;
-     font-size: 24px;
+     font-weight: 650;
+     font-size: 18px;
  }
 
  .contact-us{
@@ -81,11 +81,29 @@ footer .container{
     gap: 5px;
  }
  .legal a{
-   font-size:16px;
+   font-size:12px;
    font-style: italic;
    padding-left: 10px;
  }
  .legal a:hover{
    text-decoration: underline;
    
+ }
+
+ .contact-info{
+
+   display: flex;
+   gap:1rem;
+   padding-top:3px;
+ }
+
+ .donate-button-container{
+
+   margin-left: 10%;
+ }
+
+ .copy-right{
+
+    text-align: center;
+    grid-column: 1/-2;
  }
