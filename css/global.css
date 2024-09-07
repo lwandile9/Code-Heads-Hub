@@ -1,22 +1,24 @@
-*{
+* {
 
    margin: 0;
    padding: 0;
    list-style: none;
    text-decoration: none;
-   
+   border: none;
+
 
 }
 
-body{
+body {
 
-   background-color: rgb(216, 225, 233);
+   background-color: whitesmoke;
+   padding-top: 70px;
 }
 
 
-.container{
-     padding: 16px;
-     margin: 2px auto;
-     max-width: 1300px;
-    
+.container {
+   padding: 18px;
+   margin: 0px auto;
+   max-width: 1300px;
+
 }
