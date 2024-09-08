@@ -17,8 +17,47 @@ body {
 
 
 .container {
-   padding: 18px;
+   padding: 24px;
    margin: 0px auto;
    max-width: 1300px;
+
+}
+
+
+
+
+
+
+html {
+   scroll-behavior: auto;
+}
+
+
+
+
+@keyframes scrollingAnimo {
+
+   0% {
+      transform: translateY(-50px);
+      opacity: 0;
+
+   }
+
+   100% {
+      transform: translateY(0);
+      opacity: 1;
+   }
+}
+
+
+
+.fade-In-SectionS {
+   animation: scrollingAnimo 1s ease-in-out;
+   transition: all 1s ease-in-out;
+}
+
+.btn-join-us {
+
+   animation: scrollingAnimo 2s ease-in-out;
 
 }

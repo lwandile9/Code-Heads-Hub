@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Head's Hub</title>
+  <meta name="description"content="">
+  <meta name="keywords"content="">
+
+  
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/footer.css">
+
+  <link rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+  <!-----This is  top black box on our website-->
+  <header>
+
+<div class="container">
+      <!-----Logo-->
+      <div class="logo-container">
+        <img src="./images/general/logo.png" alt="">
+         
+      </div>
+
+
+      <!-----navigation bar-->
+      <nav >
+
+           <ul>
+               <li><a href="./index.html?#home" >Home</a></li>
+               <li><a href="./index.html?#about" >About Us</a></li>
+               <li><a href="./index.html?#courses" >Courses</a></li>
+               <li><a href="./index.html?#book-us" >book Us</a></li>
+               <li><a href="./index.html?#courses" >Contact Us</a></li>
+           </ul>
+      </nav>
+
+
+      <!-----This is  top black box on our website-->
+</div>
+  </header>
+
+  <main>
+
+  <div class="container">
+
+    <h1 class="create-account">Create Account</h1>
+
+    <form id="signup-form" action="login.html" method="POST">
+       
+       <fieldset>
+        <legend>Personal Details</legend>
+
+        <div>
+          <label for="full-name">Name:</label>
+        <input type="text" id="full-name" required
+        placeholder="Enter name and surname">
+
+        </div>
+        
+         <div>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required
+        placeholder="example@gmail.com">
+
+         </div>
+        
+        <div>
+          
+        <label for="email">Password:</label>
+        <input type="password" id="password" required
+        placeholder="create password">
+
+        </div>
+        
+         <div>
+
+          <label for="password-confirm">Confirm password:</label>
+           <input type="password" id="password-confirm" required
+             placeholder="Confirm password">
+
+         </div>
+        
+         
+
+       </fieldset>
+
+       <fieldset>
+         <legend>User type Data</legend>
+
+           <select>
+              <option disabled selected class="SELECTED">Select User Type</option>
+              <option name="mentor">Mentor</option>
+              <option name="student">Student</option>
+           </select>
+       </fieldset>
+       
+      <button type="submit" name="btn-signup">SIGN-UP</button>
+
+    </form>
+
+
+  </div>
+
+
+  </main>
+
+
+
+
+<footer>
+    <div class="container">
+
+      <!---internal links-->
+     <div class="legal">
+      <p class="title">More Links</p>
+      <a href="#">Events</a>
+      <a href="#">T&C</a>
+      <a href="#">Privacy Policies</a>
+     </div>
+
+      <!---Donate button-->
+     <div class="donate-button-container">
+      <p  class="donate-title title">Donate</p>
+      <p class="donate-description">Your donation to our ​learning hub will help create ​a 
+        vibrant and inclusive ​space where individuals of ​all ages
+         and backgrounds ​can explore, learn, and ​grow.</p>
+       <button class="btn-donate" title="click to donate">
+         <img src="./images/events/donateIcon.svg" alt="donate Button">
+       </button>
+     </div>
+
+      <!---Contact Us-->
+     <div class="contact-us">
+      
+      <div>
+        <p class="contact-us-title title">Contact us</p>
+     
+        <div class="contact-info">
+        
+          <div class="phone">
+            <p>Phone:</p>
+            <a href="#">(+27) 456-7890</a>
+          </div>
+  
+        <div class="email">
+            <p>email:</p>
+            <a href="#">info@codeheadeshub.com</a>
+        </div>
+        </div>
+      </div>
+      
+
+      <div class="social">
+        <p class="title">Social</p>
+         <div class="social-icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-square-whatsapp"></i>
+         </div>
+
+      </div>
+     </div>
+
+    <p class="copy-right">&copy; Code-Head's-hub</p>
+      
+    </div>
+  </footer>
+
+  
+</body>
+</html>
