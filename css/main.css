@@ -5,7 +5,7 @@
   background-color: rgb(34, 46, 34);
   background-position: center;
   background-repeat: repeat-x;
-  height: 35rem;
+  height: 80vh;
   padding-top:5rem ;
   background-color: #1a3c35;
 
@@ -91,7 +91,7 @@
   width: 3rem;
   border-radius: 50%;
   overflow: hidden;
-  background-color: blueviolet;
+  
 
 }
 
