@@ -5,6 +5,9 @@
   background-color: rgb(34, 46, 34);
   background-position: center;
   background-repeat: repeat-x;
+  height: 35rem;
+  padding-top:5rem ;
+  background-color: #1a3c35;
 
 }
 
@@ -19,13 +22,20 @@
 
 .btn-join-us {
 
-  width: 12rem;
-  height: 2.8rem;
+  width: 16rem;
+  height: 4rem;
   border-radius: 5px;
-  margin-top: 20px;
+  margin-top: 7rem ;
+  margin-left: 5%;
   font-weight: 600;
   transition: 0.15s ease-in-out;
   font-size: 1.5rem;
+  margin-bottom: -30px;
+  position: absolute;
+  text-align: center;
+  background-color: white;
+
+
 
 }
 
@@ -45,6 +55,12 @@
 
   width: 90%;
 
+}
+
+.call-for-aaction{
+
+   background-image: url(../images/backgound-images/backgound\ image.png);
+   background-position: center;
 }
 
 
