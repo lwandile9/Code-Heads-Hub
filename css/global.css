@@ -11,8 +11,13 @@
 
 body {
 
+   font-family: "Roboto", system-ui;
+   font-weight: 410;
+   font-style: normal;
    background-color: whitesmoke;
-   padding-top: 70px;
+   padding-top: 85px;
+   font-size: 1.6rem;
+   line-height:2.4rem;
 }
 
 img {
