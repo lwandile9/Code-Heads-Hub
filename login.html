@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/footer.css">
+
+  <link rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
 <body>
     <section class = "login">
-    <form class="form2" action="index.html?message=sing-in-success" method="post">
+        <form id="signup-form" action="./index.html">
         <h1>Login!</h1>
-        <label for="email">Email</label>
+        <label for="email">Email</label><br>
         <input id="email" email="email" type="email"
         placeholder="example@gmail.com">
       
@@ -19,8 +27,11 @@
         <input id="password" password="password" type="password"
         placeholder="eibve123">
 
-        <label for="candidate">Mentor</label>
-        <input type="checkbox">
+        <select>
+            <option disabled selected class="SELECTED">Select User Type</option>
+            <option name="mentor">Mentor</option>
+            <option name="student">Student</option>
+         </select>
           
 
         <button type="Submit" title ="click to sign in">SIGN IN</button>
