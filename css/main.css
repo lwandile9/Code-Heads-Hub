@@ -152,6 +152,14 @@ height: 80px;
 
 }
 
+/**** COURSES *******/
+.contentimages{
+  height: 60vh;
+  display:flex ;
+  gap:10px;
+  margin-left: 200px ;
+  }
+
 
 
 
