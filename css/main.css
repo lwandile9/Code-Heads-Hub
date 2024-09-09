@@ -46,6 +46,12 @@
 
 }
 
+.call-for-aaction{
+
+   background-image: url(../images/backgound-images/backgound\ image.png);
+   background-position: center;
+}
+
 
 
 /**** About us *******/
@@ -67,10 +73,10 @@
 
 .team-member-image {
 
-  width: 2.2rem;
+  width: 3.2rem;
   border-radius: 50%;
   overflow: hidden;
-  background-color: blueviolet;
+  
 
 }
 
