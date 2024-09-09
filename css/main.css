@@ -22,12 +22,14 @@
 
 .btn-join-us {
 
-  width: 6rem;
-  height: 1.7rem;
+  width: 14rem;
+  height: 4rem;
   border-radius: 5px;
   margin-top: 10px;
   font-weight: 600;
   transition: 0.15s ease-in-out;
+  font-size: 24px;
+  margin-top: 30px;
 
 }
 
@@ -52,7 +54,9 @@
 .call-for-aaction{
 
    background-image: url(../images/backgound-images/backgound\ image.png);
-   background-position: center;
+   background-position: left;
+   background-size:30rem;
+   background-repeat: no-repeat;
 }
 
 
@@ -118,18 +122,34 @@
 .mission-version .container {
 
   display: flex;
-  gap: 3%;
+  gap: 10%;
+  line-height: 3rem;
 }
 
 .mission-version-image {
 
   width: 120%;
-  height: 13.5rem;
+  height: 42rem;
 
   overflow: hidden;
 }
 
+.mission-version-text .mission{
 
+   margin-bottom: 3.5rem;
+}
+.mission-version-text{
+
+   margin-top: 5rem;
+}
+
+/**** COURSES *******/
+.contentimages{
+
+  display:flex ;
+  gap:10px;
+  
+  }
 
 
 
@@ -232,8 +252,8 @@
 .card {
 
   background-color: rgb(255, 255, 255);
-  width: 12rem;
-  line-height: 1.2rem;
+  width: 21rem;
+  line-height: 1.5rem;
   overflow: hidden;
   border-radius: 4px;
   padding: 10px;
@@ -322,7 +342,7 @@
     align-items: center;
     border: 1px solid green;
     border-radius: 3px;
-    margin-top: 10px;
+    margin-top:2rem;
     background-color: white;
     width: 12rem;
 

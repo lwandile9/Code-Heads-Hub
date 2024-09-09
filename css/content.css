@@ -1,0 +1,25 @@
+.content-card {
+
+    background-color: rgb(7, 54, 14);
+    width: 12rem;
+    line-height: 1.2rem;
+    overflow: hidden;
+    border-radius: 4px;
+    padding: 10px;
+    padding-bottom: 10px;
+    color:whitesmoke;
+    box-shadow: 6px 5px 20px rgba(0, 0, 0, 0.1);
+  
+    margin: 2px auto;
+    margin-bottom: 10px;
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+  
+  }
+
+  .htmlcontent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+
+ }

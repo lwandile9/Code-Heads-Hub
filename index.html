@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/content.css">
+
+  <link rel="stylesheet" href="./stylesheet.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -227,7 +230,29 @@
 
         <!-----Courses section  ( this is where we will list all of our available courses)-->
       
-
+        <section id="courses" class="contentimages container" >
+          <figure>
+            <a href="./lms/htmlcontent.html" ><img src="./images/courses/HTML.png" alt="" width="200" height="300" title="Click on the course to learn more"></a>
+            <figcaption>
+              Learn the building blocks of the web with our html course! HTML is the standard markup language used to create web pages. in this course, you will discover how to structure and format content, add multimedia elements  and create interactive web pages
+            </figcaption>
+          </figure>
+  
+          <figure>
+            <a href="./lms/cssconent.html"><img src="/images/courses/CSS.png" alt=""  width="200" height="300" title="Click on the course to learn more"></a>
+            <figcaption color="blue">
+              Take your web development skills to the next level with our our CSS course! Cascading Style Sheets(CSS) is the language used to control  the layout, visual styling and user experience of web pages. In this course, you'll learn how to create responsive, visually appealing, and engaging web pages.
+             
+            </figcaption>
+          </figure>
+          
+          <figure>
+              <a href="./lms/jscontent.html"><img src="./images/courses/js.png" alt=""  width="200" height="300" title="Click on the course to learn more"></a>
+              <figcaption>
+                Unlock the power of JavaScript and take your web development skills to the next level! This is the language of the web, allowing you to create interactive dynamic, and engaging web pages. In this course you will learn the fundamentals of JavaScript and how to use it to enhance your web page.
+              </figcaption>
+            </figure>
+          </section>
 
            <!-----Why us section  ( telling our client why they should choose us )-->
         <section>
@@ -239,9 +264,48 @@
       
 
          <!-----book us section  (this where our clients will book sessions with us )-->
-        <section>
+        
+         <!-----book us section  (this where our clients will book sessions with us )-->
+     
 
-        </section>
+         <section id="book-us" class="FormLabels">
+          <h Class="Book_session"><b>BOOK SESSION </b></h>
+          <div>
+              <p class="tagline">
+             <b>Unlock your potential with our<br> mentoring sessions!</br></b>
+          </p>
+  
+          <p class="tagline2">
+          <b>Book your appointment now and enjoy <br>the first FREE 30 MINUTES  on us!</br></b></p>
+  
+          <p class="tagline3"><b>Additional 30-minutes sessions are only</b></p></br><b>R25.</b></p>
+  
+          <p class="tagline4">
+              <b>Don't miss out on this opportunity to grow</b></br> <b>and  learn.Schedule your session today!</b></p>
+      </div>  
+      
+          <div class="FormContainer">
+          <form action="" method="get">
+  
+              <label for="fullName">Full Name:</label>
+              <Input type="text" id="Fname" required class="Bookinginput"><br>
+              
+               <label for="email">Email:</label>
+               <Input type="text" id="Ëmail" required  class="Bookinginput"><br>
+  
+              <label3 for="duration">Duration:</label>
+              <input type="text"    id="Duration" required  class="Bookinginput"><br>
+  
+              <label4 for="description">Description:</label>
+              <input type="text"   id="Description"required  class="Bookinginput"><br>
+  
+              <button class="btn" >BOOK</button>
+          </form> 
+      </div>  
+
+
+      </section>
+
 
          <!-----Events section  ( this is where we will list all of available events  internally )-->
         <section>
