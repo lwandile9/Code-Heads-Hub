@@ -2,12 +2,13 @@ footer {
 
    background-color: rgb(21, 43, 21);
    color: white;
+   font-size: 1.5 rem;
 }
 
 
 footer .container {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
+   display: flex;
+   justify-content: space-between;
 }
 
 
@@ -56,7 +57,7 @@ footer .container {
 .fa-brands:hover {
 
    font-size: 1.4rem;
-   background-color: rgb(5, 58, 5);
+   background-color: #1a3c35;
 
 }
 
@@ -64,48 +65,12 @@ footer p, a {
    color: white;
 }
 
-.contact-us-title, .title {
-   font-weight: 650;
-   font-size: 16px;
+
+.donate-description , .contact-us {
+   font-size: 1.1rem;
 }
 
-.contact-us {
-
-   grid-column: 1/span 2;
-   display: flex;
-   justify-content: space-between;
-}
-
-
-.legal {
-
-   display: flex;
-   flex-direction: column;
-   gap: 5px;
-}
-
-.legal a {
-   font-size: 12px;
-   font-style: italic;
-   padding-left: 10px;
-}
-
-.legal a:hover {
-   text-decoration: underline;
-
-}
-
-.donate-button-container {
-
-   margin-left: 10%;
-}
-
-.copy-right {
-
-   text-align: center;
-   grid-column: 1/-2;
-}
-
-.donate-description {
-   font-size: 14px;
+.copy-right{
+    text-align: center;
+    font-size: 1rem;
 }

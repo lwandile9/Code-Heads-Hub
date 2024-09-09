@@ -5,6 +5,9 @@
   background-color: rgb(34, 46, 34);
   background-position: center;
   background-repeat: repeat-x;
+  height: 35rem;
+  padding-top:5rem ;
+  background-color: #1a3c35;
 
 }
 
@@ -19,12 +22,20 @@
 
 .btn-join-us {
 
-  width: 6rem;
-  height: 1.7rem;
+  width: 16rem;
+  height: 4rem;
   border-radius: 5px;
-  margin-top: 10px;
+  margin-top: 7rem ;
+  margin-left: 5%;
   font-weight: 600;
   transition: 0.15s ease-in-out;
+  font-size: 1.5rem;
+  margin-bottom: -30px;
+  position: absolute;
+  text-align: center;
+  background-color: white;
+
+
 
 }
 
@@ -46,6 +57,12 @@
 
 }
 
+.call-for-aaction{
+
+   background-image: url(../images/backgound-images/backgound\ image.png);
+   background-position: center;
+}
+
 
 
 /**** About us *******/
@@ -62,12 +79,13 @@
   display: flex;
   align-items: center;
   gap: 3px;
+  line-height: 1.6rem;
 
 }
 
 .team-member-image {
 
-  width: 2.2rem;
+  width: 3rem;
   border-radius: 50%;
   overflow: hidden;
   background-color: blueviolet;
@@ -118,13 +136,18 @@ height: 80px;
 
 .mission-version-image {
 
-  width: 120%;
-  height: 13.5rem;
-
+  width: 80%;
+  border-radius: 10px;
   overflow: hidden;
 }
 
+.mission-version-text {
 
+  display: flex;
+  flex-direction: column;
+  gap:12%;
+
+}
 
 
 
@@ -136,12 +159,14 @@ height: 80px;
 }
 
 #signup-form {
-  max-width: 16rem;
+  max-width: 25rem;
   margin: auto;
   background-color: rgb(32, 47, 32);
   color: white;
   padding: 5px;
   border-radius: 3px;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
 }
 
 #signup-form div {
@@ -161,7 +186,7 @@ height: 80px;
 
 #signup-form input, select {
 
-  height: 1.5rem;
+  height: 2.5rem;
   border-radius: 3px;
   border: none;
   padding-left: 4px;
@@ -178,7 +203,7 @@ height: 80px;
 #signup-form button {
 
   width: 100%;
-  height: 1.5rem;
+  height: 2.5rem;
   background-color: whitesmoke;
   font-weight: 600;
   margin-top: 10px;
@@ -227,19 +252,19 @@ height: 80px;
 .card {
 
   background-color: rgb(255, 255, 255);
-  width: 12rem;
-  line-height: 1.2rem;
+  width: 23rem;
+  font-size: 1.1rem;
   overflow: hidden;
   border-radius: 4px;
   padding: 10px;
   padding-bottom: 10px;
   color: rgb(56, 56, 121);
   box-shadow: 6px 5px 20px rgba(0, 0, 0, 0.1);
-
   margin: 2px auto;
   margin-bottom: 10px;
   transition: all 0.15s ease-in-out;
   cursor: pointer;
+  line-height: 1.8rem;
 
 }
 
@@ -283,7 +308,7 @@ height: 80px;
 
 
 
-/***** Responsiveness Events ***/
+/***** Responsiveness  ***/
 
 @media screen and (max-width :900px) {
   .card {
