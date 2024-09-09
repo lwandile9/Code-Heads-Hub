@@ -15,6 +15,12 @@ body {
    padding-top: 70px;
 }
 
+img {
+
+   width: 100%;
+   object-fit: contain;
+
+}
 
 .container {
    padding: 24px;
@@ -40,6 +46,11 @@ html {
    0% {
       transform: translateY(-50px);
       opacity: 0;
+
+   }
+
+   50% {
+      opacity: 0.2;
 
    }
 

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +8,7 @@
 </head>
 <body>
     <section class = "login">
-    <form class="form2">
+    <form class="form2" action="index.html?message=sing-in-success" method="post">
         <h1>Login!</h1>
         <label for="email">Email</label>
         <input id="email" email="email" type="email"
@@ -20,11 +19,9 @@
         <input id="password" password="password" type="password"
         placeholder="eibve123">
 
-        <label for="candidate">Select Option</label>
-            <select id="candidate" name="candidate">
-              <option value="Candidate">Candidate</option>
-              <option value="Mentor">Mentor</option>
-            </select>
+        <label for="candidate">Mentor</label>
+        <input type="checkbox">
+          
 
         <button type="Submit" title ="click to sign in">SIGN IN</button>
        </form>
