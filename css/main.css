@@ -122,18 +122,26 @@
 .mission-version .container {
 
   display: flex;
-  gap: 3%;
+  gap: 10%;
+  line-height: 3rem;
 }
 
 .mission-version-image {
 
   width: 120%;
-  height: 13.5rem;
+  height: 42rem;
 
   overflow: hidden;
 }
 
+.mission-version-text .mission{
 
+   margin-bottom: 3.5rem;
+}
+.mission-version-text{
+
+   margin-top: 5rem;
+}
 
 /**** COURSES *******/
 .contentimages{
@@ -334,7 +342,7 @@
     align-items: center;
     border: 1px solid green;
     border-radius: 3px;
-    margin-top: 10px;
+    margin-top:2rem;
     background-color: white;
     width: 12rem;
 
