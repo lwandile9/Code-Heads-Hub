@@ -1,9 +1,17 @@
 /*styling the body of the code which means that everything I do here affect the whole code*/
+.book-head {
+    display: flex;
+    justify-content: center;
+}
+
 .Book_session{
-    color:darkgreen; 
+    display: flex;
+    justify-content: center;
+    color:rgb(7, 54, 14);
     font-size: 30px;
     font-weight: bolder;
-    text-align: center;
+    margin-top:105px;
+    
 }
 
 /*styiling the paraph under this nameclass*/
@@ -26,14 +34,20 @@
 margin-top: 15PX;
 
 }
-
+.Book---Section{
+display: flex;
+margin-top: 20px;
+margin-right: 30px;
+}
 /* styling everything that falls under this element */
-.book-us{
-    
+#book-us{
+    margin-bottom: 50px;
     display: flex;    /*Controls the direction in which flex items are placed in the flex container. */
     flex-direction: column;  /*pecifies the direction in which flex items are placed in the flex container*/
-    align-items: center;  /* responsible for aligning everything in center*/
+    align-items: center;
+    justify-content: center;  /* responsible for aligning everything in center*/
     padding: 20px;      /*space betw the content */
+
 }
 
 /*styiling everything that has to do with this class*/
@@ -61,6 +75,7 @@ margin-top: 15PX;
 .FormContainer{
 border: solid 1.5px rgb(1, 20, 1);
 padding: 20px;
+margin-left: 45px;
 
 }
     input{
