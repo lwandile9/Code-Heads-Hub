@@ -4,14 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Code Head's Hub</title>
-  <link rel="stylesheet" href="/style.css">
+  
   <meta name="description"content="">
   <meta name="keywords"content="">
 
-  <link rel="stylesheet" href="./css/main.css">
+ 
   <link rel="stylesheet" href="./css/global.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/footer.css">
+
+<!----anathi------>
+<link rel="stylesheet" href="./css/main.css">
+
+
 
   <link rel="stylesheet" 
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -21,23 +26,19 @@
 
 
   <!-----This is  top black box on our website-->
-  <header>
-
-
-      <!-----Logo-->
-
-
-      <!-----navigation bar-->
-
-
-      <!-----This is  top black box on our website-->
-
-
-
-        <!-----This is  top black box on our website-->
-
+  <header class="headerbackground">
+    <div class="container">
+      <img src="/images//logo.png" alt="Logo" width="2rem" height="2rem">
+      <h2>CODE HEAD'S HUB</h2>
+      <nav>
+        <a href="#home">HOME</a>
+        <a href="#about-us">ABOUT US</a>
+        <a href="#courses">COURSES</a>
+        <a href="#book-us">BOOK US</a>
+        <a href="#contact-us">CONTACT US</a>
+      </nav>
+    </div>
   </header>
-
 
 
 
@@ -45,45 +46,16 @@
   <main>
 
         <!-----home section  ( landing page of our website)-->
-
-        <section class="login">
+        <section class="home" id="home">
+          <div class="container-left">
+            <h1>JOIN US WHERE<br>INNOVATION MEETS<br>INSPIRATION.</h1>
+            <p>DIVE INTO CUTTING-EDGE TECHNOLOGY,<br>EXPAND YOUR SKILLS, AND CONNECT WITH<br>A COMMUNITY THAT IS FUTURE-FOCUSED</p>
+            <button><a href="/signup.html" style="color: #1a3c35;">JOIN US</a></button>
+          </div>
        
-          <form class="form1"action = "recieved.html" method="get">
-            <h1>Create Account</h1>
-            <label for="fullname">Full Name</label>
-            <input id="fullname" fullname="fullname" type="text"
-            placeholder="Gcina Ngxowa">
-          
-  
-            <label for="email">Email</label>
-            <input id="email" email="email" type="email"
-            placeholder="example@gmail.com">
-          
-          
-            <label for="password">Password</label>
-            <input id="password" password="password" type="password"
-            placeholder="eibve123">
-          
-          <label for="password">Confirm password</label>
-            <input id="password" password="password" type="password"
-            placeholder="eibve123">
-
-
-            <label for="candidate">Select Option</label>
-            <select id="candidate" name="candidate" title="Select option">
-              <option value="Candidate">Candidate</option>
-              <option value="Mentor">Mentor</option>
-             
-            </select>
-            
-
-           
-            <button type="Submit" title = "click to sign up">SIGN UP</button>
-
-          
-
-         </form>
-      
+          <div class="container-right">
+            <img class="imageR" src="/images/Image.png" alt="Laptop Image">
+          </div>
         </section>
 
                  <div>
@@ -117,11 +89,44 @@
         </section>
 
 
-         
-      
-
          <!-----book us section  (this where our clients will book sessions with us )-->
-        <section>
+     
+
+          <section class="FormLabels">
+            <h Class="Book_session"><b>BOOK SESSION </b></h>
+            <div>
+                <p class="tagline">
+               <b>Unlock your potential with our<br> mentoring sessions!</br></b>
+            </p>
+    
+            <p class="tagline2">
+            <b>Book your appointment now and enjoy <br>the first FREE 30 MINUTES  on us!</br></b></p>
+    
+            <p class="tagline3"><b>Additional 30-minutes sessions are only</b></p></br><b>R25.</b></p>
+    
+            <p class="tagline4">
+                <b>Don't miss out on this opportunity to grow</b></br> <b>and  learn.Schedule your session today!</b></p>
+        </div>  
+        
+            <div class="FormContainer">
+            <form action="" method="get">
+    
+                <label for="fullName">Full Name:</label>
+                <Input type="text" id="Fname" required class="Bookinginput"><br>
+                
+                 <label for="email">Email:</label>
+                 <Input type="text" id="Ëmail" required  class="Bookinginput"><br>
+    
+                <label3 for="duration">Duration:</label>
+                <input type="text"    id="Duration" required  class="Bookinginput"><br>
+    
+                <label4 for="description">Description:</label>
+                <input type="text"   id="Description"required  class="Bookinginput"><br>
+    
+                <button class="btn" >BOOK</button>
+            </form> 
+        </div>  
+ 
 
         </section>
 

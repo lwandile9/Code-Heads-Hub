@@ -1,3 +1,200 @@
+body{
+  background-color: aliceblue;
+}
+.loginform{
+  background: #1a3c35;
+  color: aliceblue;
+
+  
+
+}
+
+.login button{
+
+  background-color: rgb(253, 255, 255);
+  color: rgb(19, 63, 45);
+  cursor: pointer;
+  border-radius: 8px;
+  width: 170px;
+  margin: 6%;
+  
+}
+
+
+.login{
+  background: #1a3c35;
+ margin-left: 14rem;
+  padding: 9px;
+
+
+}
+
+@media screen and (max-width:500px){ 
+
+
+  .login{
+
+      margin-left: 0;
+       padding: 9px;
+     
+   
+   }
+  
+}
+
+@media screen and (max-width:800px){ 
+
+
+  .login{
+
+      margin-left: 7rem;
+       padding: 9px;
+     
+   
+   }
+  
+}
+
+.login input{
+  background-color: aliceblue;
+  width:10rem;
+  height: 16px;
+display: block;
+}
+.About{
+  background-color: rgb(247, 247, 247);
+  color: rgb(11, 54, 38); 
+  display: flex;
+
+
+}
+.profilepicture{
+  width: 100px;
+  overflow: hidden;
+  border-radius: 50px;
+}
+.profilepicture img{
+width: 100% ;
+object-fit: contain;
+}
+
+
+
+
+
+
+/**** Booking *******/
+/*styling the body of the code which means that everything I do here affect the whole code*/
+.Book_session{
+  color:darkgreen; 
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+/*styiling the paraph under this nameclass*/
+.Booktagline{
+  width: 500px;
+  margin-bottom:15PX;
+}
+
+.Booktagline2{
+  margin-bottom:20PX;
+}
+
+.Booktagline3{
+  line-height:0px ;
+  display: inline;
+ 
+  }
+
+.Booktagline4 {
+margin-top: 15PX;
+
+}
+
+/* styling everything that falls under this element */
+.FormLabels{
+  
+  display: flex;    /*Controls the direction in which flex items are placed in the flex container. */
+  flex-direction: column;  /*pecifies the direction in which flex items are placed in the flex container*/
+  align-items: center;  /* responsible for aligning everything in center*/
+  padding: 20px;      /*space betw the content */
+}
+
+/*styiling everything that has to do with this class*/
+.Background-image{
+  position: absolute ;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100px;
+  z-index:-1;    /*Elements with a negative z-index can appear behind other elements with a z-index of 0 or higher.*/
+  background-size: cover;   /*scale a background image so that it covers the entire area of the element*/
+}
+
+
+.FormLabels{
+  
+      margin-bottom: 10px;
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+     margin-right: 10px;
+     align-items: 10px;
+     color: rgb(4, 71, 4);
+}
+.FormContainer{
+border: solid 1.5px rgb(1, 20, 1);
+padding: 20px;
+
+}
+  .Bookinginput{
+      padding: 20px;
+      margin-bottom: 20px;
+      width: 200px;
+      height: 16px;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 30px;
+      border: none;
+      border-color: darkgreen;
+
+  }
+
+  #Fname{
+      margin-left: 20px;
+  }
+#Ëmail{
+  margin-left: 50px; 
+}
+#Duration{
+  margin-left: 35px;
+}
+#Description{
+  margin-left:18px;
+}
+
+.tagline{
+  float:right;
+}
+
+/*styling the button*/
+.btn{
+  border-radius: 10px;  /* responsible for making the border coners no to have square shape*/
+  font-size: 200;
+  font-weight: 330px;
+  padding: 15px 10px 15px 10px;
+  background-color: darkgreen;
+  COLOR: WHITE;
+  width: 115PX;
+  margin:30PX;
+  margin-left:115PX;
+}
+
+
+
+
 /**** Events *******/
 
 .cards-container{

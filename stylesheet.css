@@ -1,41 +1,56 @@
-/*I am styling the body of the code which means that everything I do here affect the whole code*/
+/*styling the body of the code which means that everything I do here affect the whole code*/
 .Book_session{
-    color:darkgreen; 
+    color:#006400; 
     font-size: 30px;
     font-weight: bolder;
     text-align: center;
 }
-body{
-   
+
+.whole-body{
+
     font-family: Arial, Helvetica, sans-serif; /*respnsible for the font in this code*/
     background-color: rgb(235,239,248);      /* its the color for the whole page*/
     position:absolute;    /*places an element exactly where you want it within its nearest positioned ancestor or the initial containing block, giving you precise control over its layout.*/
     top:50px;    /*means that the top edge of the element will be placed 50 pixels below the top edge of its containing block.*/
     margin-left: 350px;
-    background-image: url(Image-removebg-preview.png);
+    background-image: url(../Code-Heads-Hub/images/Image-removebg-preview.png);
     background-position: center;
     background-size: cover;
-
+    marging-botton:5px;
 }
+
 /*styiling the paraph under this nameclass*/
-.tagline{
+#tagline1{
+    font-size: 20px;
     width: 500px;
     margin-bottom:15PX;
+    line-height: 20px;
 }
 
-.tagline2{
-    margin-bottom:20PX;
+.Booktagline2{
+    font-size: 20;
+    margin-top:10PX;
+    position:absolute;
+    line-height: 20px;
 }
 
-.tagline3{
+.R25{
+    
+padding-left: 120px;
+font-size: 20px;
+}
+.Booktagline3{
+    font-size: 20px;
     line-height:0px ;
     display: inline;
-   
+    margin-top:10PX;
+    line-height: 20px;
     }
 
-.tagline4 {
-margin-top: 15PX;
 
+.Booktagline4 {
+margin-top: 15PX;
+font-size: 20px;
 }
 
 /* styling everything that falls under this element */
