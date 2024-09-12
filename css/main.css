@@ -355,7 +355,7 @@ padding: 20px;
 /*styling the button*/
 .btn{
   border-radius: 10px;  /* responsible for making the border coners no to have square shape*/
-  font-size: 200;
+  font-size: 200PX;
   font-weight: 330px;
   padding: 15px 10px 15px 10px;
   background-color: darkgreen;
