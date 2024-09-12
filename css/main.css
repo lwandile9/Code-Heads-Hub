@@ -237,7 +237,9 @@
   font-size: 30px;
   font-weight: bolder;
   text-align: center;
+
 }
+
 
 .whole-body{
   font-family: Arial, Helvetica, sans-serif; /*respnsible for the font in this code*/
@@ -314,46 +316,66 @@ section{
 
 
 .BOOK-US-SESSION{
-
+  height:100vh;
     margin-bottom: 10px;
     gap: 10px;
     margin-right: 10px;
      align-items: 10px;
      color: rgb(4, 71, 4);
 }
-.FormContainer{
+.FormContainer{/*styling the form container*/
 border: solid 1.5px rgb(1, 20, 1);
 padding: 20px;
+display: block;
+
+
+
 
 }
-  input{
-      padding: 20px;
+  input{ /*styiling the input labels*/
       margin-bottom: 20px;
       width: 200px;
-      height: 16px;
+      height: 26px;
       padding: 10px;
       font-size: 16px;
       border-radius: 30px;
-      border: none;
       border-color: darkgreen;
-
+      
+    
   }
 
-  #Fname{
-      margin-left: 20px;
+  .FormContainer form {
+  
+    
+     
   }
-#Ëmail{
-  margin-left: 50px; 
+ 
+#label0{
+ display: flex;
+ justify-content: center;
 }
-#Duration{
-  margin-left: 35px;
+#label1{
+  display: flex;
+  align-content: center;
 }
-#Description{
-  margin-left:18px;
+#label2{
+  display: flex;
+  justify-content: center;
+  
+}
+#label3{
+  padding-top: 15px;
+  display: flex;
+  align-self: center;
+}
+#label4{
+  display: flex;
+  align-items: center;
 }
 
 .tagline{
   float:right;
+  
 }
 
 /*styling the button*/
