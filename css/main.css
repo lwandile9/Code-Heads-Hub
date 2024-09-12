@@ -84,37 +84,65 @@ object-fit: contain;
 
 
 /**** Booking *******/
+/*BOOK US STYLE*/
+
 /*styling the body of the code which means that everything I do here affect the whole code*/
 .Book_session{
-  color:darkgreen; 
+  color:#006400; 
   font-size: 30px;
   font-weight: bolder;
   text-align: center;
 }
 
+.whole-body{
+
+  font-family: Arial, Helvetica, sans-serif; /*respnsible for the font in this code*/
+  background-color: rgb(235,239,248);      /* its the color for the whole page*/
+  position:absolute;    /*places an element exactly where you want it within its nearest positioned ancestor or the initial containing block, giving you precise control over its layout.*/
+  top:50px;    /*means that the top edge of the element will be placed 50 pixels below the top edge of its containing block.*/
+  margin-left: 350px;
+  background-image: url(../Code-Heads-Hub/images/Image-removebg-preview.png);
+  background-position: center;
+  background-size: cover;
+  marging-botton:5px;
+}
+
 /*styiling the paraph under this nameclass*/
-.Booktagline{
+#tagline1{
+  font-size: 20px;
   width: 500px;
   margin-bottom:15PX;
+  line-height: 20px;
 }
 
 .Booktagline2{
-  margin-bottom:20PX;
+  font-size: 20;
+  margin-top:10PX;
+  position:absolute;
+  line-height: 20px;
 }
 
+.R25{
+  
+padding-left: 120px;
+font-size: 20px;
+}
 .Booktagline3{
+  font-size: 20px;
   line-height:0px ;
   display: inline;
- 
+  margin-top:10PX;
+  line-height: 20px;
   }
+
 
 .Booktagline4 {
 margin-top: 15PX;
-
+font-size: 20px;
 }
 
 /* styling everything that falls under this element */
-.FormLabels{
+section{
   
   display: flex;    /*Controls the direction in which flex items are placed in the flex container. */
   flex-direction: column;  /*pecifies the direction in which flex items are placed in the flex container*/
@@ -149,7 +177,7 @@ border: solid 1.5px rgb(1, 20, 1);
 padding: 20px;
 
 }
-  .Bookinginput{
+  input{
       padding: 20px;
       margin-bottom: 20px;
       width: 200px;
@@ -191,9 +219,6 @@ padding: 20px;
   margin:30PX;
   margin-left:115PX;
 }
-
-
-
 
 /**** Events *******/
 
