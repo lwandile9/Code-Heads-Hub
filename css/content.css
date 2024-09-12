@@ -14,8 +14,30 @@
     margin-bottom: 10px;
     transition: all 0.15s ease-in-out;
     cursor: pointer;
+    position: relative;
   
   }
+
+  .front{
+    display:block;
+
+  }
+
+  .back{
+    display:none;
+    position: absolute;
+    top:0;
+    left:0; 
+  }
+  .content-card:hover .front{
+    display: none;
+  }
+
+  .content-card:hover .back{
+    display: block;
+  }
+
+
 
   .htmlcontent{
     display: grid;

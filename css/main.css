@@ -161,12 +161,13 @@
 }
 
 #signup-form {
-  max-width: 16rem;
+  max-width: 20rem;
   margin: auto;
   background-color: rgb(32, 47, 32);
   color: white;
   padding: 5px;
   border-radius: 3px;
+
 }
 
 #signup-form div {
@@ -203,9 +204,9 @@
 #signup-form button {
 
   width: 100%;
-  height: 1.5rem;
+  height: 1.8rem;
   background-color: whitesmoke;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 10px;
   border-radius: 3px;
   transition: 0.15s ease-in-out;
@@ -228,6 +229,142 @@
 
   margin-bottom: 10px;
 }
+/*BOOK US STYLE*/
+
+/*styling the body of the code which means that everything I do here affect the whole code*/
+.Book_session{
+  color:#006400; 
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.whole-body{
+
+  font-family: Arial, Helvetica, sans-serif; /*respnsible for the font in this code*/
+  background-color: rgb(235,239,248);      /* its the color for the whole page*/
+  position:absolute;    /*places an element exactly where you want it within its nearest positioned ancestor or the initial containing block, giving you precise control over its layout.*/
+  top:50px;    /*means that the top edge of the element will be placed 50 pixels below the top edge of its containing block.*/
+  margin-left: 350px;
+  background-image: url(../Code-Heads-Hub/images/Image-removebg-preview.png);
+  background-position: center;
+  background-size: cover;
+  marging-botton:5px;
+}
+
+/*styiling the paraph under this nameclass*/
+#tagline1{
+  font-size: 20px;
+  width: 500px;
+  margin-bottom:15PX;
+  line-height: 20px;
+}
+
+.Booktagline2{
+  font-size: 20;
+  margin-top:10PX;
+  position:absolute;
+  line-height: 20px;
+}
+
+.R25{
+  
+padding-left: 120px;
+font-size: 20px;
+}
+.Booktagline3{
+  font-size: 20px;
+  line-height:0px ;
+  display: inline;
+  margin-top:10PX;
+  line-height: 20px;
+  }
+
+
+.Booktagline4 {
+margin-top: 15PX;
+font-size: 20px;
+}
+
+/* styling everything that falls under this element */
+section{
+  
+  display: flex;    /*Controls the direction in which flex items are placed in the flex container. */
+  flex-direction: column;  /*pecifies the direction in which flex items are placed in the flex container*/
+  align-items: center;  /* responsible for aligning everything in center*/
+  padding: 20px;      /*space betw the content */
+}
+
+/*styiling everything that has to do with this class*/
+.Background-image{
+  position: absolute ;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100px;
+  z-index:-1;    /*Elements with a negative z-index can appear behind other elements with a z-index of 0 or higher.*/
+  background-size: cover;   /*scale a background image so that it covers the entire area of the element*/
+}
+
+
+.FormLabels{
+  
+      margin-bottom: 10px;
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+     margin-right: 10px;
+     align-items: 10px;
+     color: rgb(4, 71, 4);
+}
+.FormContainer{
+border: solid 1.5px rgb(1, 20, 1);
+padding: 20px;
+
+}
+  input{
+      padding: 20px;
+      margin-bottom: 20px;
+      width: 200px;
+      height: 16px;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 30px;
+      border: none;
+      border-color: darkgreen;
+
+  }
+
+  #Fname{
+      margin-left: 20px;
+  }
+#Ëmail{
+  margin-left: 50px; 
+}
+#Duration{
+  margin-left: 35px;
+}
+#Description{
+  margin-left:18px;
+}
+
+.tagline{
+  float:right;
+}
+
+/*styling the button*/
+.btn{
+  border-radius: 10px;  /* responsible for making the border coners no to have square shape*/
+  font-size: 200;
+  font-weight: 330px;
+  padding: 15px 10px 15px 10px;
+  background-color: darkgreen;
+  COLOR: WHITE;
+  width: 115PX;
+  margin:30PX;
+  margin-left:115PX;
+}
+
 
 /**** Events *******/
 
