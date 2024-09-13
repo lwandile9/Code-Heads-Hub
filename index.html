@@ -14,7 +14,8 @@
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="/css/content.css">
 
-
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +34,7 @@
 <div class="container">
       <!-----Logo-->
       <div class="logo-container">
-        <img src="./images/general/logo.png" alt="">
+        <img src="./images/general/logo.png" alt="logo">
          
       </div>
 
@@ -45,8 +46,11 @@
                <li><a href="#home" >Home</a></li>
                <li><a href="#about" >About Us</a></li>
                <li><a href="#courses" >Courses</a></li>
-               <li><a href="#book-us" >book Us</a></li>
+               <li><a href="#BOOK-US" >book Us</a></li>
                <li><a  href="./contact.html" >Contact Us</a></li>
+               <li><button id="btn-log-out">
+                <a  href="./index.html" ><i class="fa-regular fa-user"></i></a>
+               </button></li>
            </ul>
       </nav>
 
@@ -67,10 +71,11 @@
 
           <div class="container">
 
-          <div class="call-for-aaction">
+          <div id="txt-join" class="call-for-aaction">
+
             <h1 class="txt-call-for-actiom">JOIN US WHERE  <br>INNOVATION  MEETS<br>INSPIRATION</h1>
             <p class="txt-call-for-actiom">Dive into cutting-edge technology, <br> Expand your skills , and connect with<br> a community that is future-focused</p>
-            <button class="btn-join-us"><a href="./sign-up.html">Join us</a></button>
+            <button id="btn-join-us" class="btn-join-us"><a href="./sign-up.html">Join us</a></button>
 
           </div>
 
@@ -265,7 +270,14 @@
 
          <!-----book us section  (this where our clients will book sessions with us )-->
         
-         <section class="BOOK-US-SESSION">
+         <!-----book us section  (this where our clients will book sessions with us )-->
+     
+
+        
+
+  
+    
+         <section class="BOOK-US-SESSION" id="BOOK-US">
           <h1 Class="Book_session"><b>BOOK SESSION </b></h1>
           <div class="Book-Us-Content-Wrap">
           <div  class="whole-body">
@@ -309,7 +321,7 @@
                </div>
               
   
-              <button class="btn" >BOOK</button>
+              <button class="btn" > <a href="./thank.html"> BOOK</a></button>  
           </form> 
       </div> 
        </div>
@@ -551,6 +563,22 @@
     <!--SCRIPTS-->
       
     </div>
+
+
+    <script  src="./javascripts/home-page-update.js"></script>
   </footer>
 </body>
+
+
+
+
+
+
+
+
+
 </html>
+
+
+
+

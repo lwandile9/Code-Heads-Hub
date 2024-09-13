@@ -23,7 +23,7 @@
   
    #cont {
     text-align: center;
-    color: #28a745;
+    color: #1a3c12;
     margin-bottom: 20px;
   }
   
@@ -34,15 +34,15 @@
   
   #label {
     display: block;
-    color: #28a745;
+    color: #1a3c12;
     font-weight: bold;
     margin-bottom: 5px;
   }
   
   input, textarea {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #28a745;
+    padding: 1px;
+    border: 1px solid #1a3c12;
     border-radius: 5px;
     background-color: #f9f9f9;
     font-size: 16px;
@@ -50,15 +50,15 @@
   }
   
   input:focus, textarea:focus {
-    border-color: #28a745;
+    border-color: #1a3c12;
     outline: none;
-    color: #218838;
+    color: #1a3c12;
     
   }
   
  
   .submit-btn {
-    background-color: #28a745;
+    background-color: #1a3c12;
     color: white;
     padding: 10px;
     border: none;
@@ -72,4 +72,18 @@
     background-color: #218838;
   }
   
+
+
+  .thankyoubutton{
+    background-color: #1a3c12;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #044407;
+    text-decoration: none;
+    border-radius: 5px;
+  }
   
+  
+ 
