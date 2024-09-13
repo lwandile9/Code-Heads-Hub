@@ -153,7 +153,9 @@
  
 }
 
-
+#html-course{
+  margin-top: -25px;
+}
 
 /**** forms *******/
 .create-account {
@@ -211,6 +213,7 @@
   margin-top: 10px;
   border-radius: 3px;
   transition: 0.15s ease-in-out;
+  
 
 }
 
