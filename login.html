@@ -15,8 +15,9 @@
 
 </head>
 <body>
+    <script src ="java.js"></script>
     <section class = "login">
-        <form id="signup-form" action="./index.html">
+        <form onSubmit = "return validate()"id="signup-form" action="./index.html">
         <h1>Login!</h1>
         <label for="email">Email</label><br>
         <input id="email" email="email" type="email"

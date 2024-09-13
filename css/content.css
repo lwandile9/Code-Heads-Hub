@@ -1,23 +1,21 @@
-.content-card {
+.htmlcard-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2px;
+  transition: all 0.15s ease-in-out;
+}
+.html-card{
 
-    background-color: rgb(7, 54, 14);
-    width: 12rem;
-    line-height: 1.2rem;
-    overflow: hidden;
-    border-radius: 4px;
-    padding: 10px;
-    padding-bottom: 10px;
-    color:whitesmoke;
-    box-shadow: 6px 5px 20px rgba(0, 0, 0, 0.1);
-  
-    margin: 2px auto;
-    margin-bottom: 10px;
-    transition: all 0.15s ease-in-out;
-    cursor: pointer;
-    position: relative;
-  
-  }
+  border: radius 4px;
 
+}
+
+.html-card:hover {
+
+  box-shadow: 8px 7px 17px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
+
+}
   .front{
     display:block;
 
@@ -45,3 +43,30 @@
     gap: 2px;
 
  }
+
+/*****cards***/
+.intro-html{
+  width: 500px; ;
+  height:250px;
+}
+
+.hide{
+  display:none;
+}
+
+.show{
+  background-color: blueviolet;
+}
+
+.html2-intro{
+position: absolute;
+top: 20px;
+left:15px;
+
+}
+
+.html-intro{
+  position: absolute;
+  top: 200px;
+  right:10px;
+}

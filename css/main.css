@@ -144,13 +144,6 @@
 }
 
 /**** COURSES *******/
-.contentimages{
-
-  display:flex ;
-  gap:10px;
-  
-  }
-
 
 
 
@@ -237,7 +230,9 @@
   font-size: 30px;
   font-weight: bolder;
   text-align: center;
+
 }
+
 
 .whole-body{
   font-family: Arial, Helvetica, sans-serif; /*respnsible for the font in this code*/
@@ -314,46 +309,66 @@ section{
 
 
 .BOOK-US-SESSION{
-
+  height:100vh;
     margin-bottom: 10px;
     gap: 10px;
     margin-right: 10px;
      align-items: 10px;
      color: rgb(4, 71, 4);
 }
-.FormContainer{
+.FormContainer{/*styling the form container*/
 border: solid 1.5px rgb(1, 20, 1);
 padding: 20px;
+display: block;
+
+
+
 
 }
-  input{
-      padding: 20px;
+  input{ /*styiling the input labels*/
       margin-bottom: 20px;
       width: 200px;
-      height: 16px;
+      height: 26px;
       padding: 10px;
       font-size: 16px;
       border-radius: 30px;
-      border: none;
       border-color: darkgreen;
-
+      
+    
   }
 
-  #Fname{
-      margin-left: 20px;
+  .FormContainer form {
+  
+    
+     
   }
-#Ëmail{
-  margin-left: 50px; 
+ 
+#label0{
+ display: flex;
+ justify-content: center;
 }
-#Duration{
-  margin-left: 35px;
+#label1{
+  display: flex;
+  align-content: center;
 }
-#Description{
-  margin-left:18px;
+#label2{
+  display: flex;
+  justify-content: center;
+  
+}
+#label3{
+  padding-top: 15px;
+  display: flex;
+  align-self: center;
+}
+#label4{
+  display: flex;
+  align-items: center;
 }
 
 .tagline{
   float:right;
+  
 }
 
 /*styling the button*/
@@ -372,12 +387,19 @@ padding: 20px;
 
 /**** Events *******/
 
+.txt-events-description{
+
+
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.6rem;
+}
 
 .cards-container {
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 2px;
+  gap: 5px;
   transition: all 0.15s ease-in-out;
 }
 
@@ -393,7 +415,7 @@ padding: 20px;
 .card {
 
   background-color: rgb(255, 255, 255);
-  width: 21rem;
+  width:90%;
   line-height: 1.5rem;
   overflow: hidden;
   border-radius: 4px;
@@ -401,11 +423,12 @@ padding: 20px;
   padding-bottom: 10px;
   color: rgb(56, 56, 121);
   box-shadow: 6px 5px 20px rgba(0, 0, 0, 0.1);
-
+  font-size:1.2rem;
   margin: 2px auto;
   margin-bottom: 10px;
   transition: all 0.15s ease-in-out;
   cursor: pointer;
+  color: rgb(29, 27, 27);
 
 }
 
@@ -449,7 +472,9 @@ padding: 20px;
 
 
 
-/***** Responsiveness Events ***/
+
+
+/***** Responsiveness ***/
 
 @media screen and (max-width :900px) {
   .card {

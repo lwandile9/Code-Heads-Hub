@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/footer.css">
-  <link rel="stylesheet" href="./css/content.css">
+  <link rel="stylesheet" href="/css/content.css">
 
 
 
@@ -26,7 +26,7 @@
 </head>
 <body>
 
-
+<script src ="java.js"></script>
   <!-----This is  top black box on our website-->
   <header>
 
@@ -46,11 +46,11 @@
                <li><a href="#about" >About Us</a></li>
                <li><a href="#courses" >Courses</a></li>
                <li><a href="#book-us" >book Us</a></li>
-               <li><a href="./contact.html" >Contact Us</a></li>
+               <li><a  href="./contact.html" >Contact Us</a></li>
            </ul>
       </nav>
 
-
+      
       <!-----This is  top black box on our website-->
 </div>
   </header>
@@ -276,7 +276,7 @@
           <h1 Class="Book_session"><b>BOOK SESSION </b></h1>
           <div class="Book-Us-Content-Wrap">
           <div  class="whole-body">
-             <p id="tagline1"><b>Unlock your potential with our<br>mentoring sessions!</b></br></p>
+             <p id="tagline1"><b>Unlock your potential with our<br>mentoring sessions!</b></br> </p>
   
           <p class="tagline2">
           <br><b>Book your appointment now and enjoy<br>the first FREE 30 MINUTES  on us!</b></br></p>
@@ -289,18 +289,31 @@
       
           <div class="FormContainer">
           <form action="" method="get">
-  
-              <label for="fullName">Full Name:</label>
-              <Input type="text" id="Fname" required><br>
+              <div class="label0">
+                <label for="fullName">Full Name:</label>
+              <Input type="text" id="Fname" required  placeholder="Full name"><br> 
+              </div>
+             
+              <div class="label1">
+                 <label for="email">Email:</label>
+               <Input type="text" id="Ëmail" required  placeholder="ëxample@gmail.com"><br> 
+              </div>
+             
+               <div class="label2">
+                  <label for="course">Course:</label>
+               <Input type="text" id="Course" required  placeholder="name of course"><br>
+               </div>
               
-               <label for="email">Email:</label>
-               <Input type="text" id="Ëmail" required ><br>
-  
-              <label3 for="duration">Duration:</label>
-              <input type="text"    id="Duration" required><br>
-  
-              <label4 for="description">Description:</label>
-              <input type="text"   id="Description"required><br>
+                 <div class="label3">
+                    <label for="duration">Duration:</label>
+              <input type="text"    id="Duration" required placeholder="60minutes"><br>
+                 </div>
+            
+               <div class="label4">
+                <label for="description">Description:</label>
+              <input type="text"   id="Description"required placeholder="write your description"><br>
+               </div>
+              
   
               <button class="btn" >BOOK</button>
           </form> 
@@ -314,6 +327,7 @@
           <div class="container">
 
             <h1 class="events-title">Events</h1>
+            <p class="txt-events-description">Explore upcoming tech events, from AI and cybersecurity to web development and DevOps. Whether you’re looking to learn, network, or discover new innovations, find the right event for you. Click the card for details and secure your spot today!</p>
 
             <div class="cards-container">
 
@@ -328,20 +342,19 @@
                 </div>
 
                 <!---CARD title-->
-                <div class="card-title">Almost full</div>
+                <div class="card-title">External</div>
 
                 <!---CARD  body-->
                 <div class="card-body">
 
-                  <p>Lorem ipsum dolor, sit amet consectetur 
-                    adipisicing elit. Provident, eius.</p>
-                  <p class="start-date">Event Date: <time datetime="2024-9-30">2024-9-30 8:30 AM</time></p>
+                  <p>Discover the future of blockchain technology at our immersive conference. From decentralized applications to smart contracts. Perfect for developers, entrepre.</p>
+                  <p class="start-date">Event Date: <time datetime="2024-9-30">2024-11-30 8:30 AM</time></p>
                 </div>
 
                 <!---CARD footer-->
                 <div class="card-footer">
-                  <p class="company">techspo cape town</p>
-                  <p>free</p>
+                  <p class="company">Exp Reality CPT</p>
+                  <p>R100</p>
                 </div>
 
              </div>
@@ -361,14 +374,13 @@
                 </div>
 
                 <!---CARD title-->
-                <div class="card-title">Almost full</div>
+                <div class="card-title">External</div>
 
                 <!---CARD  body-->
                 <div class="card-body">
 
-                  <p>Lorem ipsum dolor, sit amet consectetur 
-                    adipisicing elit. Provident, eius.</p>
-                  <p class="start-date">Event Date: <time datetime="2024-9-30">2024-9-30 8:30 AM</time></p>
+                  <p>Join us for a deep dive into AI and machine learning! Industry experts will share insights on the latest trends, tools, and techniques shaping the future of tech</p>
+                  <p class="start-date">Event Date: <time datetime="2024-9-30">2024-12-30 8:30 AM</time></p>
                 </div>
 
                 <!---CARD footer-->
@@ -390,20 +402,19 @@
                 </div>
 
                 <!---CARD title-->
-                <div class="card-title">Almost full</div>
+                <div class="card-title">External</div>
 
                 <!---CARD  body-->
                 <div class="card-body">
 
-                  <p>Lorem ipsum dolor, sit amet consectetur 
-                    adipisicing elit. Provident, eius.</p>
-                  <p class="start-date">Event Date: <time datetime="2024-9-30">2024-9-30 8:30 AM</time></p>
+                  <p>Get inspired at the Tech Innovators Conference! This event showcases breakthroughs in mobile app development, cloud computing, and more. Gain valuable insights from leading tech entrepreneurs</p>
+                  <p class="start-date">Event Date: <time datetime="2024-9-30">2024-12-30 7:30 AM</time></p>
                 </div>
 
                 <!---CARD footer-->
                 <div class="card-footer">
-                  <p class="company">techspo cape town</p>
-                  <p>free</p>
+                  <p class="company">Dell technologies</p>
+                  <p>Free</p>
                 </div>
 
              </div>
@@ -419,19 +430,18 @@
                 </div>
 
                 <!---CARD title-->
-                <div class="card-title">Almost full</div>
+                <div class="card-title">External</div>
 
                 <!---CARD  body-->
                 <div class="card-body">
 
-                  <p>Lorem ipsum dolor, sit amet consectetur 
-                    adipisicing elit. Provident, eius.</p>
-                  <p class="start-date">Event Date: <time datetime="2024-9-30">2024-9-30 8:30 AM</time></p>
+                  <p>Join the DevOps Revolution! Learn best practices for improving software delivery, continuous integration, and automation, Joining and adapting your existing tech with AI.</p>
+                  <p class="start-date">Event Date: <time datetime="2024-9-30">2024-10-30 7:30 AM</time></p>
                 </div>
 
                 <!---CARD footer-->
                 <div class="card-footer">
-                  <p class="company">techspo cape town</p>
+                  <p class="company">Microsoft-Tech-Day</p>
                   <p>free</p>
                 </div>
 
@@ -450,19 +460,18 @@
                 </div>
 
                 <!---CARD title-->
-                <div class="card-title">Almost full</div>
+                <div class="card-title">Internal</div>
 
                 <!---CARD  body-->
                 <div class="card-body">
-
-                  <p>Lorem ipsum dolor, sit amet consectetur 
-                    adipisicing elit. Provident, eius.</p>
+                       
+                  <p>Connect With 500+ IT Executives and CIOs, Gartner Experts, and Leading Technology Vendors. Become a Better IT Leader. Sessions on Executive Skills, Business Strategy, Future of Tech</p>
                   <p class="start-date">Event Date: <time datetime="2024-9-30">2024-9-30 8:30 AM</time></p>
                 </div>
 
                 <!---CARD footer-->
                 <div class="card-footer">
-                  <p class="company">techspo cape town</p>
+                  <p class="company">Code Head's hub</p>
                   <p>free</p>
                 </div>
 
@@ -482,20 +491,19 @@
                 </div>
 
                 <!---CARD title-->
-                <div class="card-title">Almost full</div>
+                <div class="card-title">Internal</div>
 
                 <!---CARD  body-->
                 <div class="card-body">
 
-                  <p>Lorem ipsum dolor, sit amet consectetur 
-                    adipisicing elit. Provident, eius.</p>
-                  <p class="start-date">Event Date: <time datetime="2024-9-30">2024-9-30 8:30 AM</time></p>
+                  <p>Attend our annual Web Development Summit, featuring hands-on workshops and expert-led sessions. Discover the latest technologies and frameworks.</p>
+                  <p class="start-date">Event Date: <time datetime="2024-9-30">2024-9-15 3:00 PM</time></p>
                 </div>
-                
+
 
                 <!---CARD footer-->
                 <div class="card-footer">
-                  <p class="company">techspo cape town</p>
+                  <p class="company">Code head's hub</p>
                   <p>free</p>
                 </div>
 
