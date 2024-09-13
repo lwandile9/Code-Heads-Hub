@@ -154,7 +154,7 @@
 }
 
 #signup-form {
-  max-width: 20rem;
+  max-width: 23rem;
   margin: auto;
   background-color: rgb(32, 47, 32);
   color: white;
@@ -221,6 +221,11 @@
 
 
   margin-bottom: 10px;
+}
+.paragrap
+{
+font-size: medium;
+color: aliceblue;
 }
 /*BOOK US STYLE*/
 
