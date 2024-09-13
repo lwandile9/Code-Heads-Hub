@@ -23,7 +23,7 @@ header nav li {
   padding: 3px;
   border-radius: 5px;
   font-weight: 700;
-  transition: all 0.15 ease-in-out;
+  
 }
 
 header nav li:hover {
@@ -36,11 +36,27 @@ header nav li:hover {
 
 
 .logo-container {
-  width: 3rem;
+  width: 5rem;
+  margin-left: -100px;
 }
 
 .logo-container img {
   width: 100%;
   object-fit: contain;
   margin-top: -1.1rem;
+}
+
+#btn-log-out{
+
+   background-color: transparent;
+    width: 50%;
+    font-weight: bolder;
+    font-size: 30px;
+    display: none;
+}
+#btn-log-out :hover{
+
+   color: red;
+ 
+     
 }

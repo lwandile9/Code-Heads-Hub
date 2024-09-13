@@ -145,11 +145,15 @@
 
 /**** COURSES *******/
 
-/**** Why Us *******/
-.why-us{
-  display:grid;
+#courses{
+
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap:10px;
+ 
 }
+
+
 
 /**** forms *******/
 .create-account {
@@ -511,6 +515,15 @@ display: block;
 
     display: none;
   }
+
+  #courses{
+
+    display: grid;
+    grid-template-columns: 1fr;
+   
+   
+  }
+  
 
 }
 
