@@ -26,7 +26,7 @@
 </head>
 <body>
 
-
+<script src ="java.js"></script>
   <!-----This is  top black box on our website-->
   <header>
 
@@ -46,11 +46,11 @@
                <li><a href="#about" >About Us</a></li>
                <li><a href="#courses" >Courses</a></li>
                <li><a href="#book-us" >book Us</a></li>
-               <li><a href="#social" >Contact Us</a></li>
+               <li><a  href="./contact.html" >Contact Us</a></li>
            </ul>
       </nav>
 
-
+      
       <!-----This is  top black box on our website-->
 </div>
   </header>
@@ -276,7 +276,7 @@
           <h1 Class="Book_session"><b>BOOK SESSION </b></h1>
           <div class="Book-Us-Content-Wrap">
           <div  class="whole-body">
-             <p id="tagline1"><b>Unlock your potential with our<br>mentoring sessions!</b></br></p>
+             <p id="tagline1"><b>Unlock your potential with our<br>mentoring sessions!</b></br> </p>
   
           <p class="tagline2">
           <br><b>Book your appointment now and enjoy<br>the first FREE 30 MINUTES  on us!</b></br></p>
@@ -289,18 +289,31 @@
       
           <div class="FormContainer">
           <form action="" method="get">
-  
-              <label for="fullName">Full Name:</label>
-              <Input type="text" id="Fname" required><br>
+              <div class="label0">
+                <label for="fullName">Full Name:</label>
+              <Input type="text" id="Fname" required  placeholder="Full name"><br> 
+              </div>
+             
+              <div class="label1">
+                 <label for="email">Email:</label>
+               <Input type="text" id="Ëmail" required  placeholder="ëxample@gmail.com"><br> 
+              </div>
+             
+               <div class="label2">
+                  <label for="course">Course:</label>
+               <Input type="text" id="Course" required  placeholder="name of course"><br>
+               </div>
               
-               <label for="email">Email:</label>
-               <Input type="text" id="Ëmail" required ><br>
-  
-              <label3 for="duration">Duration:</label>
-              <input type="text"    id="Duration" required><br>
-  
-              <label4 for="description">Description:</label>
-              <input type="text"   id="Description"required><br>
+                 <div class="label3">
+                    <label for="duration">Duration:</label>
+              <input type="text"    id="Duration" required placeholder="60minutes"><br>
+                 </div>
+            
+               <div class="label4">
+                <label for="description">Description:</label>
+              <input type="text"   id="Description"required placeholder="write your description"><br>
+               </div>
+              
   
               <button class="btn" >BOOK</button>
           </form> 
@@ -486,7 +499,7 @@
                   <p>Attend our annual Web Development Summit, featuring hands-on workshops and expert-led sessions. Discover the latest technologies and frameworks.</p>
                   <p class="start-date">Event Date: <time datetime="2024-9-30">2024-9-15 3:00 PM</time></p>
                 </div>
-                
+
 
                 <!---CARD footer-->
                 <div class="card-footer">
