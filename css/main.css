@@ -145,7 +145,11 @@
 
 /**** COURSES *******/
 
-
+/**** Why Us *******/
+.why-us{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
 /**** forms *******/
 .create-account {
