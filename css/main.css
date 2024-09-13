@@ -145,6 +145,14 @@
 
 /**** COURSES *******/
 
+#courses{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:10px;
+ 
+}
+
 
 
 /**** forms *******/
@@ -529,6 +537,15 @@ display: block;
 
     display: none;
   }
+
+  #courses{
+
+    display: grid;
+    grid-template-columns: 1fr;
+   
+   
+  }
+  
 
 }
 
