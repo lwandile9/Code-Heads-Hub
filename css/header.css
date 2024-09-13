@@ -44,3 +44,18 @@ header nav li:hover {
   object-fit: contain;
   margin-top: -1.1rem;
 }
+
+#btn-log-out{
+
+   background-color: transparent;
+    width: 50%;
+    font-weight: bolder;
+    font-size: 30px;
+    display: none;
+}
+#btn-log-out :hover{
+
+   color: red;
+ 
+     
+}
