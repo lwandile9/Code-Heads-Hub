@@ -23,7 +23,7 @@ header nav li {
   padding: 3px;
   border-radius: 5px;
   font-weight: 700;
-  transition: all 0.15 ease-in-out;
+  
 }
 
 header nav li:hover {
@@ -36,7 +36,8 @@ header nav li:hover {
 
 
 .logo-container {
-  width: 3rem;
+  width: 5rem;
+  margin-left: -100px;
 }
 
 .logo-container img {
