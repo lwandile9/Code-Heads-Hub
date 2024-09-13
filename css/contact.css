@@ -1,0 +1,89 @@
+.body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    
+  }
+  
+  .contact-form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+   
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  
+   #cont {
+    text-align: center;
+    color: #1a3c12;
+    margin-bottom: 20px;
+  }
+  
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  #label {
+    display: block;
+    color: #1a3c12;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 1px;
+    border: 1px solid #1a3c12;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #1a3c12;
+    outline: none;
+    color: #1a3c12;
+    
+  }
+  
+ 
+  .submit-btn {
+    background-color: #1a3c12;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    
+  }
+  
+  .submit-btn:hover {
+    background-color: #218838;
+  }
+  
+
+
+  .thankyoubutton{
+    background-color: #1a3c12;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #044407;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  
+ 
