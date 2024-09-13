@@ -154,7 +154,7 @@
 }
 
 #signup-form {
-  max-width: 20rem;
+  max-width: 23rem;
   margin: auto;
   background-color: rgb(32, 47, 32);
   color: white;
@@ -222,6 +222,11 @@
 
   margin-bottom: 10px;
 }
+.paragrap
+{
+font-size: medium;
+color: aliceblue;
+}
 /*BOOK US STYLE*/
 
 /*styling the body of the code which means that everything I do here affect the whole code*/
@@ -230,10 +235,10 @@
   font-size: 30px;
   font-weight: bolder;
   text-align: center;
-
+  padding: 50px;
 }
 
-
+/*(positioning the content*/
 .whole-body{
   font-family: Arial, Helvetica, sans-serif; /*respnsible for the font in this code*/
       /* its the color for the whole page*/
@@ -244,69 +249,52 @@
   background-position: center;
   background-size: cover;
   padding-right: 50px;
+  margin-top: 80px;
+  
 }
-
-/*styiling the paraph under this nameclass*/
-#tagline1{
- /* font-size: 20px;
-  margin-bottom:15PX;
-  line-height: 20px;*/
-}
-
-.Booktagline2{
-  font-size: 20;
-  margin-top:10PX;
-  line-height: 24px;
-}
-
-.R25{
-  line-height: 24px;
-padding-left: 120px;
-font-size: 20px;
-}
-.Booktagline3{
-
-  font-size: 20px;
-  line-height:0px ;
-  display: inline;
-  margin-top:10PX;
-  line-height: 20px;
-  }
-
-
-.Booktagline4 {
-margin-top: 15PX;
-font-size: 20px;
-}
-
+/*(also stying the content*/
 /* styling everything that falls under this element */
 section{
-  
   display: flex;    /*Controls the direction in which flex items are placed in the flex container. */
   flex-direction: column;  /*pecifies the direction in which flex items are placed in the flex container*/
   align-items: center;  /* responsible for aligning everything in center*/
   padding: 20px;      /*space betw the content */
 }
 
-/*styiling everything that has to do with this class*/
+.tagline1 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+  
+.tagline2{
+  line-height: 30px;
+margin-top: -20px;
+ margin-bottom: 15px;
+ line-height: normal;
+}
 
+.tagline3{
+margin-bottom: 15px;;
+line-height: normal;
+}
+
+
+.tagline4{
+  line-height: normal;
+}
+
+.mentoring{
+  position: center;
+}
+
+/*(styling the allignment of iform and paragraph*/
 .Book-Us-Content-Wrap{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  text-align: ltr;
 }
-
-
-.Background-image{
-  /*position: absolute ;*/
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 100px;
-  z-index:-1;    /*Elements with a negative z-index can appear behind other elements with a z-index of 0 or higher.*/
-  background-size: cover;   /*scale a background image so that it covers the entire area of the element*/
-}
-
 
 .BOOK-US-SESSION{
   height:100vh;
@@ -316,13 +304,11 @@ section{
      align-items: 10px;
      color: rgb(4, 71, 4);
 }
+
 .FormContainer{/*styling the form container*/
 border: solid 1.5px rgb(1, 20, 1);
 padding: 20px;
 display: block;
-
-
-
 
 }
   input{ /*styiling the input labels*/
@@ -333,16 +319,8 @@ display: block;
       font-size: 16px;
       border-radius: 30px;
       border-color: darkgreen;
-      
-    
   }
 
-  .FormContainer form {
-  
-    
-     
-  }
- 
 #label0{
  display: flex;
  justify-content: center;
