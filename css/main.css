@@ -318,8 +318,7 @@ section{
 .BOOK-US-SESSION{
   
       margin-bottom: 10px;
-  
-    gap: 10px;
+        gap: 10px;
      margin-right: 10px;
      align-items: 10px;
      color: rgb(4, 71, 4);
@@ -375,12 +374,19 @@ padding: 20px;
 
 /**** Events *******/
 
+.txt-events-description{
+
+
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.6rem;
+}
 
 .cards-container {
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 2px;
+  gap: 5px;
   transition: all 0.15s ease-in-out;
 }
 
@@ -396,7 +402,7 @@ padding: 20px;
 .card {
 
   background-color: rgb(255, 255, 255);
-  width: 21rem;
+  width:90%;
   line-height: 1.5rem;
   overflow: hidden;
   border-radius: 4px;
@@ -404,11 +410,12 @@ padding: 20px;
   padding-bottom: 10px;
   color: rgb(56, 56, 121);
   box-shadow: 6px 5px 20px rgba(0, 0, 0, 0.1);
-
+  font-size:1.2rem;
   margin: 2px auto;
   margin-bottom: 10px;
   transition: all 0.15s ease-in-out;
   cursor: pointer;
+  color: rgb(29, 27, 27);
 
 }
 
@@ -452,7 +459,9 @@ padding: 20px;
 
 
 
-/***** Responsiveness Events ***/
+
+
+/***** Responsiveness ***/
 
 @media screen and (max-width :900px) {
   .card {
