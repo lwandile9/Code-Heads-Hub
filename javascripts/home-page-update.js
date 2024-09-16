@@ -26,7 +26,7 @@ if(!localStorage.getItem('login')){
 
 txtJoinElement.innerHTML =`<h1 class="txt-call-for-action">Welcome to Code head hub learning platform</h1>
 <p class="txt-call-for-action">Unlock Your Potential, One Skill at a Time! <br>Every step brings you closer to success. <br> a community that is future-focused</p>
-<button id="btn-join-us" class="btn-join-us"><a href=".">Start Learning!</a></button>`;
+<button id="btn-join-us" class="btn-join-us"><a href="#courses">Start Learning!</a></button>`;
 
 document.getElementById('btn-log-out').style='display:block';
 }
