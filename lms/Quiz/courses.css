@@ -8,10 +8,15 @@
 }
 
 header {
-    background-color: #124113;
+    background-color:rgb(36, 51, 36);
     color: white;
     padding: 20px 0;
     text-align: center;
+}
+
+.quiz{
+    background-color:rgb(36, 51, 36) ;
+    color: whitesmoke;
 }
 
 header h1 {
