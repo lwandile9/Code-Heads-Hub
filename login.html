@@ -36,10 +36,36 @@
          </select>
           
 
-        <button type="Submit" title ="click to sign in">SIGN IN</button>
+        <button id="btn-login" type="Submit" title ="click to sign in">SIGN IN</button>
        </form>
     
     </section>
+
+
+
+    <script  >
+
+
+   // temporary script
+  document.addEventListener('DOMContentLoaded', () => {
+    
+    const btnLoginElement = document.getElementById('btn-login');
+  
+    btnLoginElement.addEventListener('click', () => {
+    
+     if (!localStorage.getItem('login')) {
+  
+       localStorage.setItem('login', 'yes');
+  
+
+     }
+   });
+  });
+  
+
+
+
+    </script>
  
 </body>
 </html>

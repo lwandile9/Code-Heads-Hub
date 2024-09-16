@@ -145,7 +145,17 @@
 
 /**** COURSES *******/
 
+#courses{
 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:10px;
+ 
+}
+
+#html-course{
+  margin-top: -25px;
+}
 
 /**** forms *******/
 .create-account {
@@ -203,6 +213,7 @@
   margin-top: 10px;
   border-radius: 3px;
   transition: 0.15s ease-in-out;
+  
 
 }
 
@@ -507,6 +518,15 @@ display: block;
 
     display: none;
   }
+
+  #courses{
+
+    display: grid;
+    grid-template-columns: 1fr;
+   
+   
+  }
+  
 
 }
 

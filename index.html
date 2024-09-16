@@ -14,7 +14,8 @@
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="/css/content.css">
 
-
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,14 +27,14 @@
 </head>
 <body>
 
-<script src ="form.js"></script>
+
   <!-----This is  top black box on our website-->
   <header>
 
 <div class="container">
       <!-----Logo-->
       <div class="logo-container">
-        <img src="./images/general/logo.png" alt="">
+        <img src="./images/general/logo.png" alt="logo">
          
       </div>
 
@@ -45,13 +46,16 @@
                <li><a href="#home" >Home</a></li>
                <li><a href="#about" >About Us</a></li>
                <li><a href="#courses" >Courses</a></li>
-               <li><a href="#book-us" >book Us</a></li>
+               <li><a href="#BOOK-US" >book Us</a></li>
                <li><a  href="./contact.html" >Contact Us</a></li>
+               <li><button id="btn-log-out">
+                <a  href="./index.html" ><i class="fa-regular fa-user"></i></a>
+               </button></li>
            </ul>
       </nav>
 
       
-      <!-----This is  top black box on our website-->
+     
 </div>
   </header>
 
@@ -67,10 +71,11 @@
 
           <div class="container">
 
-          <div class="call-for-aaction">
+          <div id="txt-join" class="call-for-aaction">
+
             <h1 class="txt-call-for-actiom">JOIN US WHERE  <br>INNOVATION  MEETS<br>INSPIRATION</h1>
             <p class="txt-call-for-actiom">Dive into cutting-edge technology, <br> Expand your skills , and connect with<br> a community that is future-focused</p>
-            <button class="btn-join-us"><a href="./sign-up.html">Join us</a></button>
+            <button id="btn-join-us" class="btn-join-us"><a href="./sign-up.html">Join us</a></button>
 
           </div>
 
@@ -231,7 +236,7 @@
         <!-----Courses section  ( this is where we will list all of our available courses)-->
       
         <section id="courses" class="contentimages container" >
-          <figure>
+          <figure id="html-course">
             <a href="./lms/htmlcontent.html" ><img src="./images/courses/HTML.png" alt="" width="200" height="300" title="Click on the course to learn more"></a>
             <figcaption>
               Learn the building blocks of the web with our html course! HTML is the standard markup language used to create web pages. in this course, you will discover how to structure and format content, add multimedia elements  and create interactive web pages
@@ -239,7 +244,7 @@
           </figure>
   
           <figure>
-            <a href="./lms/cssconent.html"><img src="/images/courses/CSS.png" alt=""  width="200" height="300" title="Click on the course to learn more"></a>
+            <a href="./lms/realcsscontent.html"><img src="/images/courses/CSS.png" alt=""  width="200" height="300" title="Click on the course to learn more"></a>
             <figcaption color="blue">
               Take your web development skills to the next level with our our CSS course! Cascading Style Sheets(CSS) is the language used to control  the layout, visual styling and user experience of web pages. In this course, you'll learn how to create responsive, visually appealing, and engaging web pages.
              
@@ -255,7 +260,33 @@
           </section>
 
            <!-----Why us section  ( telling our client why they should choose us )-->
+           
         <section>
+          <h2>WHY US?</h2>
+<figure class="why-us">
+  <img src="/Code-Heads-Hub/images/courses/Image__6_-removebg-preview-reside-one.png">
+  <figcaption>
+ Wide Network
+ <p class="style for pic1">No matter where you are, we've<br>got you coverd</p>
+  </figcaption>
+
+</figure>
+
+<figure>
+  <img src="/Code-Heads-Hub/images/courses/Image__2_-removebg-preview-resized.png">
+  <figcaption class="figacaptions">
+Unmatched Support
+<p class="style for pic2">Virtual assistance.<br>Talk to us about any concerns,<br>24/7</p>
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="/Code-Heads-Hub/images/courses/Image__5_-removebg-preview-resized.png">
+  <figcaption>
+User Friendly
+<p class="style for pic3">Easy peasy UI.<br>Our interface is simple and easy<br>to use.</p>
+  </figcaption>
+</figure>
 
         </section>
 
@@ -272,7 +303,7 @@
 
   
     
-         <section class="BOOK-US-SESSION">
+         <section class="BOOK-US-SESSION" id="BOOK-US">
           <h1 Class="Book_session"><b>BOOK SESSION </b></h1>
           <div class="Book-Us-Content-Wrap">
           <div  class="whole-body">
@@ -316,12 +347,12 @@
                </div>
               
   
-              <button class="btn" >BOOK</button>
+              <button class="btn" > <a href="./thank.html"> BOOK</a></button>  
           </form> 
       </div> 
        </div>
   </section>
-
+<!-----book us section  (this where our clients will book sessions with us )-->
 
          <!-----Events section  ( this is where we will list all of available events  internally )-->
         <section>
@@ -538,24 +569,43 @@
       <div class="social">
         <div class="contact-us">
           <p>Email: info@code-head-shub.com</p>
-         <p>Phone: 047 087 4tr56</p>
+         <p>Phone: 047 087 456</p>
         </div>
         
       
         <p class="title">Social</p>
          <div class="social-icons">
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-linkedin"></i>
+          <a target="_blank" href="https://wa.me/0611339976"><i class="fa-brands fa-square-whatsapp"></i></a>
+           <a href="https://www.facebook.com"> <i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/in/njabulo-nxumalo-26b451264/"> <i class="fa-brands fa-linkedin"></i> </a>
           <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-square-whatsapp"></i>
+          
          </div>
 
       </div>
      </div>
 
     <p class="copy-right">&copy; Code-Head's-hub 2024</p>
+
+    <!--SCRIPTS-->
       
     </div>
+
+
+    <script  src="./javascripts/home-page-update.js"></script>
   </footer>
 </body>
+
+
+
+
+
+
+
+
+
 </html>
+
+
+
+

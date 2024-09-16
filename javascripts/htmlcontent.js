@@ -42,8 +42,7 @@ buttonPrev.addEventListener("click" , function (){
    
     }
    
-   if(currentCardCount == 4)
+   if(currentCardCount == 5)
     buttonNext.addAttribute("disabled");
    
    });
-   

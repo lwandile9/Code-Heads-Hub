@@ -16,7 +16,7 @@ body {
    font-style: normal;
    background-color: whitesmoke;
    padding-top: 85px;
-   font-size: 1.6rem;
+   font-size: 1.4rem;
    line-height:2.4rem;
 }
 
@@ -75,5 +75,6 @@ html {
 .btn-join-us {
 
    animation: scrollingAnimo 2s ease-in-out;
+
 
 }
