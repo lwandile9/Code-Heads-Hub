@@ -390,12 +390,18 @@ display: block;
   margin-top: 10px;
   box-shadow: 8px 6px 8px rgba(0, 0, 0, 0.17);
   line-height: 1.4rem;
+  border-radius: 5px;
 }
 .why-us-wraper .image-container{
 
    width: 18rem;
 }
 
+
+.why-us-heading{
+
+  color: rgb(20, 78, 20);
+}
 
 /**** Events *******/
 
