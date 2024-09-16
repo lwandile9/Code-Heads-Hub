@@ -242,35 +242,34 @@ color: aliceblue;
 
 /*styling the body of the code which means that everything I do here affect the whole code*/
 .Book_session{
-  color:#006400; 
+  
   font-size: 30px;
   font-weight: bolder;
   text-align: center;
-  padding: 50px;
+  margin-bottom: 40px;
+
+
+
 }
+
 
 /*(positioning the content*/
 .whole-body{
-  font-family: Arial, Helvetica, sans-serif; /*respnsible for the font in this code*/
       /* its the color for the whole page*/
  /* position:absolute;*/    /*places an element exactly where you want it within its nearest positioned ancestor or the initial containing block, giving you precise control over its layout.*/
   top:50px;    /*means that the top edge of the element will be placed 50 pixels below the top edge of its containing block.*/
-  margin-left: 50px;
+  margin-left: 5px;
   background-image: url(../images/backgound-images/solid-heart.png);
   background-position: center;
   background-size: cover;
-  padding-right: 50px;
-  margin-top: 80px;
+  padding-right: 5px;
+  margin-top: 60px;
+  color: rgb(17, 17, 17);
   
 }
 /*(also stying the content*/
 /* styling everything that falls under this element */
-section{
-  display: flex;    /*Controls the direction in which flex items are placed in the flex container. */
-  flex-direction: column;  /*pecifies the direction in which flex items are placed in the flex container*/
-  align-items: center;  /* responsible for aligning everything in center*/
-  padding: 20px;      /*space betw the content */
-}
+
 
 .tagline1 {
   margin: 0;
@@ -303,16 +302,16 @@ line-height: normal;
 .Book-Us-Content-Wrap{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content:left;
   text-align: ltr;
+  gap: 20%;
 }
 
 .BOOK-US-SESSION{
   height:100vh;
     margin-bottom: 10px;
     gap: 10px;
-    margin-right: 10px;
-     align-items: 10px;
+    margin-right: 5px;
      color: rgb(4, 71, 4);
 }
 
@@ -495,11 +494,11 @@ display: block;
     display: flex;
     gap: 4%;
     align-items: center;
-    border: 1px solid green;
     border-radius: 3px;
     margin-top:2rem;
     background-color: white;
-    width: 12rem;
+    width: 20rem;
+    box-shadow: 10px 10px 10px rgba(34, 34, 34, 0.15);
 
 
   }
@@ -530,7 +529,7 @@ display: block;
 
 }
 
-@media screen and (max-width :600px) {
+@media screen and (max-width :650px) {
 
 
   #home .container {
@@ -553,14 +552,17 @@ display: block;
     display: flex;
     gap: 4.4%;
     align-items: center;
-
-    border: 1px solid green;
     border-radius: 2px;
     margin-top: 10px;
     background-color: white;
+  
 
+  }
 
+  .whole-body{
 
+     margin-left: 0;
+     margin-right: 0;
   }
 
 
@@ -577,6 +579,32 @@ display: block;
     margin-bottom: 3rem;
 
 
+  }
+
+  .Book-Us-Content-Wrap{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: -6rem;
+    row-gap: 3rem;
+    
+  }
+
+  .card {
+
+  
+    width: 90%;
+    line-height: 1.5rem;
+
+
+  }
+
+  .BOOK-US-SESSION{
+    height:auto;
+      margin-bottom: 10px;
+      gap: 10px;
+      margin-right: 10px;
+       align-items: 10px;
+       color: rgb(4, 71, 4);
   }
 
   .cards-container {
