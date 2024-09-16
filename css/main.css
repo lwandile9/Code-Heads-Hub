@@ -186,9 +186,6 @@ color: aliceblue;
   font-weight: bolder;
   text-align: center;
   margin-bottom: 40px;
-
-
-
 }
 
 
@@ -243,7 +240,7 @@ line-height: normal;
   flex-direction: row;
   justify-content:left;
   text-align: ltr;
-  gap: 20%;
+  gap: 8%;
 }
 
 .BOOK-US-SESSION{
@@ -251,7 +248,7 @@ line-height: normal;
     margin-bottom: 10px;
     gap: 10px;
     margin-right: 5px;
-     color: rgb(4, 71, 4);
+     color: rgb(1, 20, 1)
 }
 
 .FormContainer{/*styling the form container*/
@@ -304,7 +301,7 @@ display: block;
   font-size: 20PX;
   font-weight: 30px;
   padding: 15px 10px 15px 10px;
-  background-color: darkgreen;
+  background-color: rgb(34, 46, 34);
   COLOR: WHITE;
   width: 150PX;
   margin:30PX;
