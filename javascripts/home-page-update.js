@@ -43,3 +43,5 @@ document.getElementById('btn-log-out').style='display:block';
  
 
  })
+
+ <button id="btn-login" type="Submit" title ="click to sign in">SIGN IN</button>

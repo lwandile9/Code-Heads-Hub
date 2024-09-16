@@ -1,71 +1,282 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="./css/global.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Head's Hub</title>
+  <meta name="description"content="">
+  <meta name="keywords"content="">
+
+  
+  <link rel="stylesheet" href="./css/global.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/footer.css">
 
   <link rel="stylesheet" 
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  
+<style>
+  .body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    padding-top: 30px;
+    
+  }
+  
+  .contact-form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+   
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+   
+  }
+  
+   #cont {
+    text-align: center;
+    color: #1a3c12;
+    margin-bottom: 20px;
+  }
+  
 
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  #label {
+    display: block;
+    color: #1a3c12;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 1px;
+    border: 1px solid #1a3c12;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #1a3c12;
+    outline: none;
+    color: #1a3c12;
+    
+  }
+  
+ 
+  .submit-btn {
+    background-color: #1a3c12;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    
+  }
+  
+  .submit-btn:hover {
+    background-color: #218838;
+  }
+  
+
+
+  .thankyoubutton{
+    background-color: #1a3c12;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #044407;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  select{
+    margin-bottom: 10px;
+  }
+
+  .create-account{
+    margin-top: 40px;
+    font-size: smaller;
+    text-align: center;
+  }
+  
+ 
+</style>
 </head>
 <body>
-   
-    <section class = "login">
+
+  <!-----This is  top black box on our website-->
+  <header>
+
+<div class="container">
+      <!-----Logo-->
+      <div class="logo-container">
+        <img src="./images/general/logo.png" alt="">
+         
+      </div>
+
+
+      <!-----navigation bar-->
+      <nav >
+
+           <ul>
+               <li><a href="./index.html?#home" >Home</a></li>
+               <li><a href="./index.html?#about" >About Us</a></li>
+               <li><a href="./index.html?#courses" >Courses</a></li>
+               <li><a href="./index.html?#book-us" >book Us</a></li>
+               <li><a href="./index.html?#courses" >Contact Us</a></li>
+           </ul>
+      </nav>
+
+
+      <!-----This is  top black box on our website-->
+</div>
+  </header>
+
+  <main>
     
-        <form onSubmit = "return validate()"id="signup-form" action="./index.html">
-        <h1>Login!</h1>
-        <label for="email">Email</label><br>
-        <input id="email" email="email" type="email"
-        placeholder="example@gmail.com">
-      
-      
-        <label for="password">Password</label>
-        <input id="password" password="password" type="password"
-        placeholder="eibve123">
+  <div class="container">
 
-        <select>
-            <option disabled selected class="SELECTED">Select User Type</option>
-            <option name="mentor">Mentor</option>
-            <option name="student">Student</option>
-         </select>
-          
+    <h1 class="create-account">Sign in</h1>
 
-        <button id="btn-login" type="Submit" title ="click to sign in">SIGN IN</button>
-       </form>
     
-    </section>
+    <section class="body">
+
+      <div class="contact-form-container">
+          <form class="contact-form" action="./index.html">
+              <h2 id="cont">sign-in</h2>
+             
+              <div class="form-group">
+                  <label id="label" for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                  <label id="label" for="password">password</label>
+                  <input type="text" id="password" name="password" required >
+
+              </div>
+              <div>
+                   <select><option disabled>select user type</option>
+                      <option>student</option>
+                      <option>mentor</option>
+                  </select>
+              </div>
+              
+              
+              <button id="btn-login" type="submit" class="submit-btn">sign-in</button>
+
+          </form>
+      </div>
+  </section>
+  
+
+
+  </div>
+
+  </main>
 
 
 
+
+<footer>
+    <div class="container">
+
+      <!---internal links-->
+     <div class="legal">
+      <p class="title">More Links</p>
+      <a href="#">Events</a>
+      <a href="#">T&C</a>
+      <a href="#">Privacy Policies</a>
+     </div>
+
+      <!---Donate button-->
+     <div class="donate-button-container">
+      <p  class="donate-title title">Donate</p>
+      <p class="donate-description">Your donation to our ​learning hub will help create ​a 
+        vibrant and inclusive ​space where individuals of ​all ages
+         and backgrounds ​can explore, learn, and ​grow.</p>
+       <button class="btn-donate" title="click to donate">
+         <img src="./images/events/donateIcon.svg" alt="donate Button">
+       </button>
+     </div>
+
+      <!---Contact Us-->
+     <div class="contact-us">
+      
+      <div>
+        <p class="contact-us-title title">Contact us</p>
+     
+        <div class="contact-info">
+        
+          <div class="phone">
+            <p>Phone:</p>
+            <a href="#">(+27) 456-7890</a>
+          </div>
+  
+        <div class="email">
+            <p>email:</p>
+            <a href="#">info@codeheadeshub.com</a>
+        </div>
+        </div>
+      </div>
+      
+
+      <div class="social">
+        <p class="title">Social</p>
+         <div class="social-icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-square-whatsapp"></i>
+         </div>
+
+      </div>
+     </div>
+
+    <p class="copy-right">&copy; Code-Head's-hub</p>
+      
+    </div>
     <script  >
 
 
-   // temporary script
-  document.addEventListener('DOMContentLoaded', () => {
-    
-    const btnLoginElement = document.getElementById('btn-login');
-  
-    btnLoginElement.addEventListener('click', () => {
-    
-     if (!localStorage.getItem('login')) {
-  
-       localStorage.setItem('login', 'yes');
-  
+      // temporary script
+     document.addEventListener('DOMContentLoaded', () => {
+       
+       const btnLoginElement = document.getElementById('btn-login');
+     
+       btnLoginElement.addEventListener('click', () => {
+       
+        if (!localStorage.getItem('login')) {
+     
+          localStorage.setItem('login', 'yes');
+     
+   
+        }
+      });
+     });
+     
+   
+   
+   
+       </script>
+  </footer>
 
-     }
-   });
-  });
   
-
-
-
-    </script>
- 
 </body>
 </html>
