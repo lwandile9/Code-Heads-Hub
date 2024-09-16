@@ -252,7 +252,29 @@
     <p class="copy-right">&copy; Code-Head's-hub</p>
       
     </div>
-  </script>
+    <script  >
+
+
+      // temporary script
+     document.addEventListener('DOMContentLoaded', () => {
+       
+       const btnLoginElement = document.getElementById('btn-login');
+     
+       btnLoginElement.addEventListener('click', () => {
+       
+        if (!localStorage.getItem('login')) {
+     
+          localStorage.setItem('login', 'yes');
+     
+   
+        }
+      });
+     });
+     
+   
+   
+   
+       </script>
   </footer>
 
   
