@@ -15,7 +15,108 @@
 
   <link rel="stylesheet" 
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+  .body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    padding-top: 30px;
+    
+  }
+  
+  .contact-form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+   
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+   
+  }
+  
+   #cont {
+    text-align: center;
+    color: #1a3c12;
+    margin-bottom: 20px;
+  }
+  
 
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  #label {
+    display: block;
+    color: #1a3c12;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 1px;
+    border: 1px solid #1a3c12;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #1a3c12;
+    outline: none;
+    color: #1a3c12;
+    
+  }
+  
+ 
+  .submit-btn {
+    background-color: #1a3c12;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    
+  }
+  
+  .submit-btn:hover {
+    background-color: #218838;
+  }
+  
+
+
+  .thankyoubutton{
+    background-color: #1a3c12;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #044407;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  select{
+    margin-bottom: 10px;
+  }
+
+  .create-account{
+    margin-top: 40px;
+    font-size: smaller;
+    text-align: center;
+  }
+  
+ 
+</style>
 </head>
 <body>
 
@@ -53,60 +154,43 @@
 
     <h1 class="create-account">Create Account</h1>
 
-    <form  id="signup-form" action="./login.html">
-       
-       <fieldset>
-        <legend>Personal Details</legend>
+    
+    <section class="body">
 
-        <div>
-          <label for="full-name">Name:</label>
-        <input type="text" id="full-name" required
-        placeholder="Enter name and surname">
+      <div class="contact-form-container">
+          <form class="contact-form">
+              <h2 id="cont">sign-up</h2>
+              <div class="form-group">
+                  <label id="label" for="name">Name</label>
+                  <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                  <label id="label" for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                  <label id="label" for="password">password</label>
+                  <input type="text" id="password" name="password" required >
+              </div>
+              <div class="form-group">
+                  <label id="label" for="password" required>confirm-password</label>
+                  <label></label>
+                  <input>
 
-        </div>
-        
-         <div>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" required
-        placeholder="example@gmail.com">
-
-         </div>
-        
-        <div>
-          
-        <label for="email">Password:</label>
-        <input type="password" id="password" required
-        placeholder="create password">
-
-        </div>
-        
-         <div>
-
-          <label for="passConfirm">Confirm password:</label>
-           <input type="password" id="passConfirm" required
-             placeholder="Confirm password">
-
-         </div>
-        
-         
-
-       </fieldset>
-
-       <fieldset>
-         <legend>User type Data</legend>
-
-           <select>
-              <option disabled selected class="SELECTED">Select User Type</option>
-              <option name="mentor">Mentor</option>
-              <option name="student">Student</option>
-           </select>
-       </fieldset>
-       <p id="message">welcome</p>
-      <button id = "SignUp"  type="submit" name="btn-signup">SIGN-UP</button>
-      <p class="paragrap">you have an account already? <a href="./login.html" style="color: rgb(197, 197, 238);"><i>click login</i></a></p>
-
-    </form>
+              </div>
+              <div>
+                   <select><option disabled>select user type</option>
+                      <option>student</option>
+                      <option>mentor</option>
+                  </select>
+              </div>
+              
+              
+              <button id="btn-submit" type="submit" class="submit-btn">sign-up</button>
+          </form>
+      </div>
+  </section>
+  
 
 
   </div>
@@ -174,6 +258,7 @@
     <p class="copy-right">&copy; Code-Head's-hub</p>
       
     </div>
+  </script>
   </footer>
 
   
