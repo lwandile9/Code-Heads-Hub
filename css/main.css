@@ -373,6 +373,30 @@ display: block;
 }
 
 
+.why-us-wraper{
+
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+  border-left: 3px solid green;
+ 
+}
+.why-us-wraper{
+
+   display: grid;
+   gap: 15px;
+   grid-template-columns: 1fr 1fr 1fr;
+  border-left: 3px solid rgb(35, 65, 35);
+  padding-left: 5px;
+  margin-top: 10px;
+  box-shadow: 8px 6px 8px rgba(0, 0, 0, 0.17);
+  line-height: 1.4rem;
+}
+.why-us-wraper .image-container{
+
+   width: 18rem;
+}
+
+
 /**** Events *******/
 
 .txt-events-description{
@@ -473,6 +497,17 @@ display: block;
 
 
   }
+
+   .why-us-wraper{
+
+    display: grid;
+    grid-template-columns: 1fr ;
+   
+ }
+ .why-us-wraper .image-container{
+
+  width: 30rem;
+}
 
 
 
