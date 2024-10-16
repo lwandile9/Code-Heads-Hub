@@ -4,281 +4,262 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Code Head's Hub</title>
-  <meta name="description"content="">
-  <meta name="keywords"content="">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
-  
+  <!-- External Stylesheets -->
   <link rel="stylesheet" href="./css/global.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-  <link rel="stylesheet" 
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- Internal CSS -->
+  <style>
+    /* General body styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+    }
 
-<style>
-  .body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 700px;
-    padding-top: 30px;
-    
-  }
-  
-  .contact-form-container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-   
-  }
-  
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-   
-  }
-  
-   #cont {
-    text-align: center;
-    color: #1a3c12;
-    margin-bottom: 20px;
-  }
-  
+    /* Main container */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  #label {
-    display: block;
-    color: #1a3c12;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  input, textarea {
-    width: 100%;
-    padding: 1px;
-    border: 1px solid #1a3c12;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    font-size: 16px;
-    color: #333;
-  }
-  
-  input:focus, textarea:focus {
-    border-color: #1a3c12;
-    outline: none;
-    color: #1a3c12;
-    
-  }
-  
- 
-  .submit-btn {
-    background-color: #1a3c12;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    
-  }
-  
-  .submit-btn:hover {
-    background-color: #218838;
-  }
-  
+    /* Form Section */
+    .body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 0;
+    }
 
+    .contact-form-container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 50%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
 
-  .thankyoubutton{
-    background-color: #1a3c12;
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1.1em;
-    color: #fff;
-    background-color: #044407;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  select{
-    margin-bottom: 10px;
-  }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+    }
 
-  .create-account{
-    margin-top: 40px;
-    font-size: smaller;
-    text-align: center;
-  }
-  
-  .have-an-account{
+    #cont {
+      text-align: center;
+      color: #1a3c12;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
 
+    .form-group {
+      margin-bottom: 15px;
+    }
 
-      font-size: 14px;
-  }
- 
-  .have-an-account a{
+    label {
+      display: block;
+      color: #1a3c12;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
 
+    input, textarea, select {
+      width: 90%;
+      padding: 10px;
+      border: 1px solid #1a3c12;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+      font-size: 16px;
+      color: #333;
+    }
 
-      font-size: 14px;
+    input:focus, textarea:focus, select:focus {
+      border-color: #1a3c12;
+      outline: none;
+    }
+
+    .submit-btn {
+      background-color: #1a3c12;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .submit-btn:hover {
+      background-color: #218838;
+    }
+
+    .create-account {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .have-an-account {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .have-an-account a {
       color: blue;
-  }
- 
-</style>
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1a3c12;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      margin-top: auto;
+    }
+
+    footer .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    footer .social-icons i {
+      margin: 0 10px;
+      font-size: 24px;
+      color: white;
+    }
+
+    .copy-right {
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
 
-  <!-----This is  top black box on our website-->
+  <!-- Header -->
   <header>
-
-<div class="container">
-      <!-----Logo-->
+    <div class="container">
+      <!-- Logo -->
       <div class="logo-container">
-        <img src="./images/general/logo.png" alt="">
-         
+        <img src="./images/general/logo.png" alt="Code Head's Hub Logo">
       </div>
 
-
-      <!-----navigation bar-->
-      <nav >
-
-           <ul>
-               <li><a href="./index.html?#home" >Home</a></li>
-               <li><a href="./index.html?#about" >About Us</a></li>
-               <li><a href="./index.html?#courses" >Courses</a></li>
-               <li><a href="./index.html?#book-us" >book Us</a></li>
-               <li><a href="./index.html?#courses" >Contact Us</a></li>
-           </ul>
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <li><a href="./index.html?#home">Home</a></li>
+          <li><a href="./index.html?#about">About Us</a></li>
+          <li><a href="./index.html?#courses">Courses</a></li>
+          <li><a href="./index.html?#book-us">Book Us</a></li>
+          <li><a href="./index.html?#contact">Contact Us</a></li>
+        </ul>
       </nav>
-
-
-      <!-----This is  top black box on our website-->
-</div>
+    </div>
   </header>
 
-  <main>
-    
-  <div class="container">
-
-    <h1 class="create-account">Create Account</h1>
-
-    
-    <section class="body">
-
+  <!-- Main Content -->
+  <main class="container">
+    <div class="body">
       <div class="contact-form-container">
-          <form class="contact-form">
-           
-              <div class="form-group">
-                  <label id="label" for="name">Name</label>
-                  <input type="text" id="name" name="name" required>
-              </div>
-              <div class="form-group">
-                  <label id="label" for="email">Email</label>
-                  <input type="email" id="email" name="email" required>
-              </div>
-              <div class="form-group">
-                  <label id="label" for="password">Password</label>
-                  <input type="text" id="password" name="password" required >
-              </div>
-              <div class="form-group">
-                  <label id="label" for="password" required>Confirm-password</label>
-                  <label></label>
-                  <input>
-
-              </div>
-              <div>
-                   <select><option disabled>Select user type</option>
-                      <option>Student</option>
-                      <option>Mentor</option>
-                  </select>
-              </div>
-              
-              
-              <a href="./login.html">
-                <button id="btn-submit" type="submit" class="submit-btn">Sign-up</button>
-              </a>
-
-              <p class="have-an-account">Already  have an account?  <a href="./login.html">Login</a></p>
-
-          </form>
+        <h2 id="cont">Sign-up</h2>
+        <form class="contact-form" id="signup-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+          </div>
+          <div class="form-group">
+            <label for="user-type">Select User Type</label>
+            <select id="user-type" required>
+              <option value="" disabled selected>Select user type</option>
+              <option value="student">Student</option>
+              <option value="mentor">Mentor</option>
+            </select>
+          </div>
+          <button type="submit" class="submit-btn">Sign-up</button>
+          <p class="have-an-account">Already have an account? <a href="./login.html">Login</a></p>
+        </form>
       </div>
-  </section>
-  
-
-
-  </div>
-
+    </div>
   </main>
 
-
-
-
-<footer>
+  <!-- Footer -->
+  <footer>
     <div class="container">
-
-      <!---internal links-->
-     <div class="legal">
-      <p class="title">More Links</p>
-      <a href="#">Events</a>
-      <a href="#">T&C</a>
-      <a href="#">Privacy Policies</a>
-     </div>
-
-      <!---Donate button-->
-     <div class="donate-button-container">
-      <p  class="donate-title title">Donate</p>
-      <p class="donate-description">Your donation to our ​learning hub will help create ​a 
-        vibrant and inclusive ​space where individuals of ​all ages
-         and backgrounds ​can explore, learn, and ​grow.</p>
-       <button class="btn-donate" title="click to donate">
-         <img src="./images/events/donateIcon.svg" alt="donate Button">
-       </button>
-     </div>
-
-      <!---Contact Us-->
-     <div class="contact-us">
-      
-      <div>
-        <p class="contact-us-title title">Contact us</p>
-     
-        <div class="contact-info">
-        
-          <div class="phone">
-            <p>Phone:</p>
-            <a href="#">(+27) 456-7890</a>
-          </div>
-  
-        <div class="email">
-            <p>email:</p>
-            <a href="#">info@codeheadeshub.com</a>
-        </div>
-        </div>
+      <div class="legal">
+        <p class="title">More Links</p>
+        <a href="#">Events</a>
+        <a href="#">T&C</a>
+        <a href="#">Privacy Policies</a>
       </div>
-      
 
-      <div class="social">
-        <p class="title">Social</p>
-         <div class="social-icons">
+      <div class="donate-button-container">
+        <p class="title">Donate</p>
+        <p>Your donation helps create an inclusive space for learning and growth.</p>
+        <button class="btn-donate">
+          <img src="./images/events/donateIcon.svg" alt="Donate Button">
+        </button>
+      </div>
+
+      <div class="contact-us">
+        <p class="title">Contact Us</p>
+        <div>
+          <p>Phone: <a href="#">(+27) 456-7890</a></p>
+          <p>Email: <a href="mailto:info@codeheadeshub.com">info@codeheadeshub.com</a></p>
+        </div>
+        <div class="social-icons">
           <i class="fa-brands fa-facebook"></i>
           <i class="fa-brands fa-linkedin"></i>
           <i class="fa-brands fa-twitter"></i>
           <i class="fa-brands fa-square-whatsapp"></i>
-         </div>
-
+        </div>
       </div>
-     </div>
-
-    <p class="copy-right">&copy; Code-Head's-hub</p>
-      
     </div>
-  </script>
+    <p class="copy-right">&copy; Code-Head's Hub</p>
   </footer>
 
-  
+  <!-- JavaScript for form validation -->
+  <script>
+    document.getElementById('signup-form').addEventListener('submit', function(event) {
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirm-password').value;
+      if (password !== confirmPassword) {
+        event.preventDefault();
+        alert('Passwords do not match!');
+      }
+    });
+  </script>
 </body>
 </html>
