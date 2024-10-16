@@ -264,16 +264,14 @@
   </footer>
 
 
-  <!-- JavaScript for form validation  dat insertion-->
-
-
-  <!-- JavaScript for form validation and data insertion -->
+  <!-- JavaScript for form validation and data insertion to firebase -->
 <script type="module">
+  
   // Import Firebase modules from the Firebase SDK
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
   import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
 
-  // Firebase configuration
+  // Firebase configuration ( confidential app secrets)
   const firebaseConfig = {
     apiKey: "AIzaSyDqay72Yz6e24fOb8WjzrFjokXcQevpmQo",
     authDomain: "code-head-hub.firebaseapp.com",
@@ -286,11 +284,11 @@
 
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
-  const db = getFirestore(app);  // Initialize Firestore
+  const db = getFirestore(app);  //this will Initialize Firestore app
 
   // Handle form submission
   async function insertDataToFireBase(event) {
-    event.preventDefault();  // Prevent default form submission behavior
+    event.preventDefault(); 
 
     // Get form data from signup form
     const name = document.getElementById("name").value;
@@ -322,19 +320,19 @@
     const confirmPassword = document.getElementById('confirm-password').value;
     const passwordError = document.getElementById('passwordError');
 
-    // Password length validation
+    // Password length validation  passwornd must be equal in length and have moe than 5 chars
     if (password.length < 5) {
       passwordError.classList.add('visible');
       document.getElementById('password').style.borderColor = "red";
       event.preventDefault();
     } else if (password !== confirmPassword) {
-      // Check if passwords match
+   
       document.getElementById('password').style.borderColor = "red";
       document.getElementById('confirm-password').style.borderColor = "red";
       alert("Passwords do not match!");
       event.preventDefault();
     } else {
-      // If validation passes, proceed with Firebase data insertion
+     
       insertDataToFireBase(event);
     }
   });
