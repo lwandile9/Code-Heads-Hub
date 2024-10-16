@@ -331,8 +331,8 @@ User Friendly
               <b>Don't miss out on this opportunity to grow</b></br> <b>and  learn.Schedule your session today!</b></p>
       </div>  
       
-          <div class="FormContainer">
-          <form action="" method="get">
+          <div class="FormContainer" >
+          <form action="" method="get" id="book">
               <div class="label0">
                 <label for="fullName">Full Name:</label>
               <Input type="text" id="Fname" required  placeholder="Full name"><br> 
@@ -359,8 +359,79 @@ User Friendly
                </div>
               
   
-              <button class="btn" > <a href="./thank.html"> BOOK</a></button>  
+              <button class="btn" >BOOK</button>  
           </form> 
+           
+          <script type="module">
+            // Import Firebase modules from the Firebase SDK
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+            import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
+          
+            // Firebase configuration
+            const firebaseConfig = {
+              apiKey: "AIzaSyDqay72Yz6e24fOb8WjzrFjokXcQevpmQo",
+              authDomain: "code-head-hub.firebaseapp.com",
+              projectId: "code-head-hub",
+              storageBucket: "code-head-hub.appspot.com",
+              messagingSenderId: "448535687844",
+              appId: "1:448535687844:web:c6d15585b2b4d18fbd6c31",
+              measurementId: "G-6YNZ5C989H"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const db = getFirestore(app);  // Initialize Firestore
+          
+            // Handle form submission
+            async function insertDataToFireBase(event) {
+              event.preventDefault();  // Prevent default form submission behavior
+          
+              // Get form data from signup form
+              const name = document.getElementById("Fname").value;
+              const email = document.getElementById("Email").value;
+              const course = document.getElementById('Course').value;
+              const duration = document.getElementById('Duration').value;
+              const discription = document.getElementById('Discription').value;
+          
+              // Insert user data into Firestore
+              try {
+                const docRef = await addDoc(collection(db, "Book"), {
+                  fullname: name,
+                  email: email,
+                  course: course,
+                  duration: duration,
+                  discription: discription
+                  
+                });
+                alert("User added successfully with ID: " + docRef.id);
+              } catch (e) {
+                console.error("Error adding document: ", e);
+                alert("Error adding user: " + e.message);
+              }
+          
+              // Reset the form after submission
+              document.getElementById("book").reset();
+            }
+          
+            // Form validation and submission logic
+            document.getElementById('book').addEventListener('submit', function(event) {
+              const fname = document.getElementById('name').value;
+              const Email = document.getElementById('email').value;
+              const Course = document.getElementById('course').value;
+              const Duration  = document.getElementById('duration').value;
+              const Discription = document.getElementById('discription').value;
+          
+              // Password length validation
+              if (!fname ==null && !Email ==null && !Course==null && !Duration ==null && !Discription ==null) {
+                insertDataToFireBase(event);
+                console.log("fuck you TOTO")
+              } else {
+                // If validation passes, proceed with Firebase data insertion
+                alert("inputs must not be empty")
+              }
+            });
+          </script>
+          
       </div> 
        </div>
   </section>
