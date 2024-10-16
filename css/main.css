@@ -117,7 +117,7 @@
 
 }
 
-/**** mission and version*******/
+/**** mission and vision*******/
 
 .mission-version .container {
 
@@ -158,44 +158,10 @@
 }
 
 /**** forms *******/
-.create-account {
-  font-size: 24px;
-  text-align: center;
-}
 
-#signup-form {
-  max-width: 23rem;
-  margin: auto;
-  background-color: rgb(32, 47, 32);
-  color: white;
-  padding: 5px;
-  border-radius: 3px;
 
-}
 
-#signup-form div {
 
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 5px;
-}
-
-#signup-form fieldset {
-
-  border: solid 1px;
-  padding: 5px;
-  border-radius: 2px;
-}
-
-#signup-form input, select {
-
-  height: 1.5rem;
-  border-radius: 3px;
-  border: none;
-  padding-left: 4px;
-
-}
 
 .SELECTED {
 
@@ -204,35 +170,8 @@
 }
 
 
-#signup-form button {
-
-  width: 100%;
-  height: 1.8rem;
-  background-color: whitesmoke;
-  font-weight: 700;
-  margin-top: 10px;
-  border-radius: 3px;
-  transition: 0.15s ease-in-out;
-  
-
-}
-
-#signup-form button:hover {
-
-  opacity: 0.8;
-
-}
-
-#signup-form label {
-
-  margin-top: 10px;
-}
-
-#signup-form input, select, button {
 
 
-  margin-bottom: 10px;
-}
 .paragrap
 {
 font-size: medium;
@@ -247,9 +186,6 @@ color: aliceblue;
   font-weight: bolder;
   text-align: center;
   margin-bottom: 40px;
-
-
-
 }
 
 
@@ -304,7 +240,7 @@ line-height: normal;
   flex-direction: row;
   justify-content:left;
   text-align: ltr;
-  gap: 20%;
+  gap: 8%;
 }
 
 .BOOK-US-SESSION{
@@ -312,7 +248,7 @@ line-height: normal;
     margin-bottom: 10px;
     gap: 10px;
     margin-right: 5px;
-     color: rgb(4, 71, 4);
+     color: rgb(1, 20, 1)
 }
 
 .FormContainer{/*styling the form container*/
@@ -365,7 +301,7 @@ display: block;
   font-size: 20PX;
   font-weight: 30px;
   padding: 15px 10px 15px 10px;
-  background-color: darkgreen;
+  background-color: rgb(34, 46, 34);
   COLOR: WHITE;
   width: 150PX;
   margin:30PX;

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Course - Code Heads Hub</title>
+    <link rel="stylesheet" href="./learn-html.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <h1>Learn HTML - Code Heads Hub</h1>
+
+        <a href="../profile.html"><i class="fas fa-user" style="font-size: 4rem; color: rgb(187, 192, 186);" title="click to view your profile"></i></a>
+       
+    </header>
+
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#intro" class="nav-link">Introduction</a></li>
+                <li><a href="#structure" class="nav-link">CSS Structure</a></li>
+                <li><a href="#elements" class="nav-link">CSS Selectors</a></li>
+                <li><a href="#attributes" class="nav-link">Box model</a></li>
+                <li><a href="#links" class="nav-link"></a></li>
+                <li><a href="#lists" class="nav-link">Lists</a></li>
+                <li><a href="#tables" class="nav-link">HTML Tables</a></li>
+                <li><a href="#forms" class="nav-link">HTML Forms</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Course Content -->
+        <main class="content">
+            <!-- Introduction -->
+            <section id="intro" class="section">
+                <h2>Introduction to HTML</h2>
+                <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages. It provides the basic structure for web content by defining elements like headings, paragraphs, images, and links.</p>
+            </section>
+
+            <!-- HTML Structure -->
+            <section id="structure" class="section">
+                <h2>HTML Structure</h2>
+                <p>HTML documents are structured using elements like <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code>. These elements define the layout of the webpage and organize its content.</p>
+                <pre>
+&lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+  &lt;head&gt;
+        &lt;title&gt;Page Title&lt;/title&gt;
+   &lt;/head&gt;
+       &lt;body&gt;
+       &lt;h1&gt;This is a Heading&lt;/h1&gt;
+        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+                   &lt;/body&gt;
+     &lt;/html&gt;
+                </pre>
+            </section>
+
+            <!-- HTML Elements -->
+            <section id="elements" class="section">
+                <h2>HTML Elements</h2>
+                <p>HTML elements are the building blocks of HTML pages. Each element is represented by a tag, such as <code>&lt;h1&gt;</code> for headings or <code>&lt;p&gt;</code> for paragraphs.</p>
+                <ul>
+                    <li><code>&lt;h1&gt;&lt;/h1&gt;</code>: Defines a top-level heading.</li>
+                    <li><code>&lt;p&gt;&lt;/p&gt;</code>: Defines a paragraph.</li>
+                    <li><code>&lt;a&gt;&lt;/a&gt;</code>: Defines a hyperlink.</li>
+                    <li><code>&lt;img&gt;</code>: Defines an image.</li>
+                </ul>
+            </section>
+
+            <!-- Attributes -->
+            <section id="attributes" class="section">
+                <h2>HTML Attributes</h2>
+                <p>HTML attributes provide additional information about HTML elements. Attributes are always included in the opening tag and consist of a name and a value, such as <code>href</code> or <code>src</code>.</p>
+                <pre>
+&lt;a href="https://example.com"&gt;This is a link&lt;/a&gt;
+&lt;img src="image.jpg" alt="A description of the image"&gt;
+                </pre>
+            </section>
+
+            <!-- Links and Anchors -->
+            <section id="links" class="section">
+                <h2>Links and Anchors</h2>
+                <p>HTML links are created using the <code>&lt;a&gt;</code> tag. Links are used to navigate between different pages, documents, or sections of a website.</p>
+                <pre>
+&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;
+                </pre>
+                <p>You can also create anchors within the same page using the <code>id</code> attribute.</p>
+                <pre>
+&lt;a href="#section"&gt;Go to Section&lt;/a&gt;
+&lt;div id="section"&gt;This is the section&lt;/div&gt;
+                </pre>
+            </section>
+
+            <!-- Lists -->
+            <section id="lists" class="section">
+                <h2>Lists</h2>
+                <p>HTML provides two types of lists: ordered lists (<code>&lt;ol&gt;</code>) and unordered lists (<code>&lt;ul&gt;</code>).</p>
+                <pre>
+&lt;ul&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+&lt;/ol&gt;
+                </pre>
+            </section>
+
+            <!-- HTML Tables -->
+            <section id="tables" class="section">
+                <h2>HTML Tables</h2>
+                <p>Tables in HTML are created using the <code>&lt;table&gt;</code> element, along with <code>&lt;tr&gt;</code> for rows and <code>&lt;td&gt;</code> for cells.</p>
+                <pre>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+        &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                </pre>
+            </section>
+
+            <!-- HTML Forms -->
+            <section id="forms" class="section">
+                <h2>HTML Forms</h2>
+                <p>Forms allow users to input data and send it to a server. HTML forms are created using the <code>&lt;form&gt;</code> element, and input fields are created with tags like <code>&lt;input&gt;</code> and <code>&lt;textarea&gt;</code>.</p>
+                <pre>
+&lt;form action="/submit" method="post"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+    
+    &lt;input type="submit" value="Submit"&gt;
+      &lt;/form&gt;
+                </pre>
+            </section>
+        </main>
+    </div>
+
+
+    <script src="./learn-html.js"></script>
+</body>
+</html>
