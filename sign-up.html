@@ -62,7 +62,7 @@
     }
 
     .form-group {
-      margin-bottom: 15px;
+      margin-bottom: 8px;
     }
 
     label {
@@ -194,6 +194,7 @@
     <div class="body">
       <div class="contact-form-container">
         <h2 id="cont">Sign-up</h2>
+        
         <form class="contact-form" id="signup-form">
           <div class="form-group">
             <label for="name">Name</label>
@@ -263,31 +264,81 @@
   </footer>
 
 
-  <!-- JavaScript for form validation -->
-  <script>
-    document.getElementById('signup-form').addEventListener('submit', function(event) {
-      const password = document.getElementById('password').value;
-      const confirmPassword = document.getElementById('confirm-password').value;
+  <!-- JavaScript for form validation  dat insertion-->
 
 
-      if (password.length < 5) {
-        passwordError.classList.add('visible');
-        document.getElementById('password').style.borderColor = "red";
-        event.preventDefault();
-      } else if (password !== confirmPassword) {
-        event.preventDefault();
+  <!-- JavaScript for form validation and data insertion -->
+<script type="module">
+  // Import Firebase modules from the Firebase SDK
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+  import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
 
-       document.getElementById('password').style.borderColor = "red";
-       document.getElementById('confirm-password').style.borderColor = "red";
-       alert("Password do not match!");
-      }
+  // Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyDqay72Yz6e24fOb8WjzrFjokXcQevpmQo",
+    authDomain: "code-head-hub.firebaseapp.com",
+    projectId: "code-head-hub",
+    storageBucket: "code-head-hub.appspot.com",
+    messagingSenderId: "448535687844",
+    appId: "1:448535687844:web:c6d15585b2b4d18fbd6c31",
+    measurementId: "G-6YNZ5C989H"
+  };
 
-    });
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);  // Initialize Firestore
 
+  // Handle form submission
+  async function insertDataToFireBase(event) {
+    event.preventDefault();  // Prevent default form submission behavior
 
+    // Get form data from signup form
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById('password').value;
+    const userType = document.getElementById('user-type').value;
 
+    // Insert user data into Firestore
+    try {
+      const docRef = await addDoc(collection(db, "users"), {
+        name: name,
+        email: email,
+        password: password,
+        userType: userType
+      });
+      alert("User added successfully with ID: " + docRef.id);
+    } catch (e) {
+      console.error("Error adding document: ", e);
+      alert("Error adding user: " + e.message);
+    }
 
+    // Reset the form after submission
+    document.getElementById("signup-form").reset();
+  }
 
-  </script>
+  // Form validation and submission logic
+  document.getElementById('signup-form').addEventListener('submit', function(event) {
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirm-password').value;
+    const passwordError = document.getElementById('passwordError');
+
+    // Password length validation
+    if (password.length < 5) {
+      passwordError.classList.add('visible');
+      document.getElementById('password').style.borderColor = "red";
+      event.preventDefault();
+    } else if (password !== confirmPassword) {
+      // Check if passwords match
+      document.getElementById('password').style.borderColor = "red";
+      document.getElementById('confirm-password').style.borderColor = "red";
+      alert("Passwords do not match!");
+      event.preventDefault();
+    } else {
+      // If validation passes, proceed with Firebase data insertion
+      insertDataToFireBase(event);
+    }
+  });
+</script>
+
 </body>
 </html>
