@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Course - Code Heads Hub</title>
-    <link rel="stylesheet" href="./learn-html.css">
+    <link rel="stylesheet" href="../html/learn-html.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
 <body>
     <header>
-        <h1>Learn HTML - Code Heads Hub</h1>
+        <h1>LEARN CSS- CODE HEADS HUB</h1>
 
-        <a href="../profile.html"><i class="fas fa-user" style="font-size: 4rem; color: rgb(187, 192, 186);" title="click to view your profile"></i></a>
+        <a href="../profile.html"><i class="fas fa-user" style="font-size: 2rem; color: rgb(187, 192, 186);" title="click to view your profile"></i></a>
        
     </header>
 
@@ -23,11 +23,11 @@
                 <li><a href="#intro" class="nav-link">Introduction</a></li>
                 <li><a href="#structure" class="nav-link">CSS Structure</a></li>
                 <li><a href="#elements" class="nav-link">CSS Selectors</a></li>
-                <li><a href="#attributes" class="nav-link">Box model</a></li>
+                <li><a href="#attributes" class="nav-link">CSS Box model</a></li>
                 <li><a href="#links" class="nav-link"></a></li>
-                <li><a href="#lists" class="nav-link">Lists</a></li>
-                <li><a href="#tables" class="nav-link">HTML Tables</a></li>
-                <li><a href="#forms" class="nav-link">HTML Forms</a></li>
+                <li><a href="#lists" class="nav-link">CSS layout </a></li>
+                <li><a href="#tables" class="nav-link">CSS flexbox </a></li>
+                <li><a href="#forms" class="nav-link">CSS grid</a></li>
             </ul>
         </nav>
 
@@ -35,115 +35,159 @@
         <main class="content">
             <!-- Introduction -->
             <section id="intro" class="section">
-                <h2>Introduction to HTML</h2>
-                <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages. It provides the basic structure for web content by defining elements like headings, paragraphs, images, and links.</p>
+                <h2>Introduction to CSS</h2>
+                <p>CSS (Cascading Style Sheets) is the language used to style and layout web pages. It enhances the appearance of HTML by controlling the look and feel of elements like colors, fonts, spacing, and positioning.</p>
+                
             </section>
 
             <!-- HTML Structure -->
             <section id="structure" class="section">
-                <h2>HTML Structure</h2>
-                <p>HTML documents are structured using elements like <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code>. These elements define the layout of the webpage and organize its content.</p>
+                <h2>CSS Structure</h2>
+                <p>CSS is structured using rulesets, which consist of selectors and declarations. A selector targets the HTML elements you want to style, and declarations define the styling properties and values.</p>
                 <pre>
-&lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-  &lt;head&gt;
-        &lt;title&gt;Page Title&lt;/title&gt;
-   &lt;/head&gt;
-       &lt;body&gt;
-       &lt;h1&gt;This is a Heading&lt;/h1&gt;
-        &lt;p&gt;This is a paragraph.&lt;/p&gt;
-                   &lt;/body&gt;
-     &lt;/html&gt;
+            selector {
+                property: value;
+            }
+                </pre>
+                <p>For example, the following CSS code styles all paragraphs to be blue:</p>
+                <pre>
+            p {
+                color: blue;
+            }
                 </pre>
             </section>
+            
 
             <!-- HTML Elements -->
             <section id="elements" class="section">
-                <h2>HTML Elements</h2>
-                <p>HTML elements are the building blocks of HTML pages. Each element is represented by a tag, such as <code>&lt;h1&gt;</code> for headings or <code>&lt;p&gt;</code> for paragraphs.</p>
-                <ul>
-                    <li><code>&lt;h1&gt;&lt;/h1&gt;</code>: Defines a top-level heading.</li>
-                    <li><code>&lt;p&gt;&lt;/p&gt;</code>: Defines a paragraph.</li>
-                    <li><code>&lt;a&gt;&lt;/a&gt;</code>: Defines a hyperlink.</li>
-                    <li><code>&lt;img&gt;</code>: Defines an image.</li>
-                </ul>
+                <section id="elements" class="section">
+                    <h2>CSS Selectors</h2>
+                    <p>CSS selectors are used to select the HTML elements you want to style. The basic types of selectors include element selectors, class selectors, and ID selectors.</p>
+                    <ul>
+                        <li><code>element</code>: Selects all instances of a specific HTML element, like <code>p</code> for paragraphs. Example: <code>p { color: red; }</code></li>
+                        <li><code>.class</code>: Selects all elements with a specific class. Example: <code>.heading { font-size: 24px; }</code></li>
+                        <li><code>#id</code>: Selects an element with a specific ID. Example: <code>#main-header { background-color: yellow; }</code></li>
+                    </ul>
+                </section>
+                
             </section>
 
             <!-- Attributes -->
             <section id="attributes" class="section">
-                <h2>HTML Attributes</h2>
-                <p>HTML attributes provide additional information about HTML elements. Attributes are always included in the opening tag and consist of a name and a value, such as <code>href</code> or <code>src</code>.</p>
+                <h2>CSS Box Model</h2>
+                <p>The CSS Box Model is a fundamental concept that describes how elements are structured on a webpage. Every element in CSS is considered a rectangular box, which consists of four parts: content, padding, border, and margin.</p>
+                <ul>
+                    <li><strong>Content</strong>: The actual content of the box, such as text or an image.</li>
+                    <li><strong>Padding</strong>: The space between the content and the border, creating inner space within the box.</li>
+                    <li><strong>Border</strong>: The edge around the padding, which can be styled with different widths, colors, and styles.</li>
+                    <li><strong>Margin</strong>: The space outside the border, creating distance between this box and other elements.</li>
+                </ul>
                 <pre>
-&lt;a href="https://example.com"&gt;This is a link&lt;/a&gt;
-&lt;img src="image.jpg" alt="A description of the image"&gt;
+            /* Example CSS for Box Model */
+            .box {
+                width: 300px;
+                padding: 20px;
+                border: 5px solid black;
+                margin: 10px;
+            }
                 </pre>
             </section>
+            
 
             <!-- Links and Anchors -->
             <section id="links" class="section">
-                <h2>Links and Anchors</h2>
-                <p>HTML links are created using the <code>&lt;a&gt;</code> tag. Links are used to navigate between different pages, documents, or sections of a website.</p>
+                <h2>CSS Layout</h2>
+                <p>CSS layout techniques allow you to control the arrangement of elements on a webpage. Common layout methods include block, inline, flexbox, and grid.</p>
+                <ul>
+                    <li><strong>Block Layout</strong>: Elements take up the full width available, such as <code>div</code> and <code>p</code> tags. They stack vertically.</li>
+                    <li><strong>Inline Layout</strong>: Elements only take up as much width as necessary, such as <code>span</code> and <code>a</code> tags. They stack horizontally.</li>
+                    <li><strong>Flexbox</strong>: A layout model that allows elements to align and distribute space within a container dynamically. Example: <code>display: flex;</code></li>
+                    <li><strong>Grid Layout</strong>: A two-dimensional layout model that allows for both rows and columns. Example: <code>display: grid;</code></li>
+                </ul>
                 <pre>
-&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;
-                </pre>
-                <p>You can also create anchors within the same page using the <code>id</code> attribute.</p>
-                <pre>
-&lt;a href="#section"&gt;Go to Section&lt;/a&gt;
-&lt;div id="section"&gt;This is the section&lt;/div&gt;
+            /* Example CSS for Flexbox Layout */
+            .container {
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            /* Example CSS for Grid Layout */
+            .grid-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }
                 </pre>
             </section>
+            
 
             <!-- Lists -->
             <section id="lists" class="section">
-                <h2>Lists</h2>
-                <p>HTML provides two types of lists: ordered lists (<code>&lt;ol&gt;</code>) and unordered lists (<code>&lt;ul&gt;</code>).</p>
+                <h2>CSS Flexbox</h2>
+                <p>CSS Flexbox is a powerful layout module that allows for the alignment and distribution of space among items in a container, even when their size is unknown. It provides a more efficient way to design flexible, responsive layouts.</p>
+                <ul>
+                    <li><strong>flex-container</strong>: The parent element where Flexbox is applied. Example: <code>display: flex;</code></li>
+                    <li><strong>flex-item</strong>: The child elements within the container, which automatically adjust based on the container’s rules.</li>
+                    <li><strong>justify-content</strong>: Controls the horizontal alignment of items within the container.</li>
+                    <li><strong>align-items</strong>: Controls the vertical alignment of items within the container.</li>
+                </ul>
                 <pre>
-&lt;ul&gt;
-    &lt;li&gt;First item&lt;/li&gt;
-    &lt;li&gt;Second item&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-    &lt;li&gt;First item&lt;/li&gt;
-    &lt;li&gt;Second item&lt;/li&gt;
-&lt;/ol&gt;
+            /* Example CSS for Flexbox */
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .item {
+                padding: 10px;
+                background-color: lightblue;
+            }
                 </pre>
             </section>
+            
 
             <!-- HTML Tables -->
-            <section id="tables" class="section">
-                <h2>HTML Tables</h2>
-                <p>Tables in HTML are created using the <code>&lt;table&gt;</code> element, along with <code>&lt;tr&gt;</code> for rows and <code>&lt;td&gt;</code> for cells.</p>
+            <section id="lists" class="section">
+                <h2>CSS Flexbox</h2>
+                <p>CSS Flexbox is a powerful layout module that allows for the alignment and distribution of space among items in a container, even when their size is unknown. It provides a more efficient way to design flexible, responsive layouts.</p>
+                <ul>
+                    <li><strong>flex-container</strong>: The parent element where Flexbox is applied. Example: <code>display: flex;</code></li>
+                    <li><strong>flex-item</strong>: The child elements within the container, which automatically adjust based on the container’s rules.</li>
+                    <li><strong>justify-content</strong>: Controls the horizontal alignment of items within the container.</li>
+                    <li><strong>align-items</strong>: Controls the vertical alignment of items within the container.</li>
+                </ul>
                 <pre>
-&lt;table&gt;
-    &lt;tr&gt;
-        &lt;th&gt;Header 1&lt;/th&gt;
-        &lt;th&gt;Header 2&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
-        &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;
+            /* Example CSS for Flexbox */
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .item {
+                padding: 10px;
+                background-color: lightblue;
+            }
                 </pre>
             </section>
+            
 
-            <!-- HTML Forms -->
-            <section id="forms" class="section">
-                <h2>HTML Forms</h2>
-                <p>Forms allow users to input data and send it to a server. HTML forms are created using the <code>&lt;form&gt;</code> element, and input fields are created with tags like <code>&lt;input&gt;</code> and <code>&lt;textarea&gt;</code>.</p>
-                <pre>
-&lt;form action="/submit" method="post"&gt;
-    &lt;label for="name"&gt;Name:&lt;/label&gt;
-    &lt;input type="text" id="name" name="name"&gt;
-    
-    &lt;label for="email"&gt;Email:&lt;/label&gt;
-    &lt;input type="email" id="email" name="email"&gt;
-    
-    &lt;input type="submit" value="Submit"&gt;
-      &lt;/form&gt;
-                </pre>
+            <!-- Additional resources-->
+             <hr>
+             <section id="forms" class="section">
+                <h2 style="margin-left: 200px;">Additional Resources</h2>
+                <p>Here are some helpful YouTube videos to deepen your understanding of CSS concepts:</p>
+               
+                <iframe width="340" height="200" src="https://www.youtube.com/embed/yfoY53QXEnI?si=AyRTuc97_4mv2AxD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              
+                <iframe width="340" height="200" style="margin-left: 35px;" src="https://www.youtube.com/embed/1PnVor36_40?si=Gtv5j0QfF6Hed55K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  
+                <iframe width="340" height="200" style="margin-top: 30px;" src="https://www.youtube.com/embed/fYq5PXgSsbE?si=O0zFVhsonMvE-WJO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <iframe width="340" height="200" style="margin-left: 30px;" src="https://www.youtube.com/embed/wsTv9y931o8?si=paJkBRa3wvL-heAu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </section>
+            
         </main>
     </div>
 
