@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Code Heads Hub</title>
+    <link rel="stylesheet" href="./styles/user-profile.css">
+</head>
+<body>
+    <header>
+        <h1>Profile Page</h1>
+        <a href="./html/learn-html.html">Back to learning</a>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#profile-info" class="nav-link">Profile Information</a></li>
+                <li><a href="#progress" class="nav-link">Course Progress</a></li>
+                <li><a href="#settings" class="nav-link">Settings</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="profile-content">
+            <!-- Profile Information Section -->
+            <section id="profile-info" class="section">
+                <h2>Profile Information</h2>
+                <div class="profile-card">
+                    <img src="./imgs/gcina.png" alt="User Avatar" class="profile-avatar">
+                    <div class="profile-details">
+                        <p><strong>Name:</strong> Gcina ngxowa</p>
+                        <p><strong>Email:</strong> Gcina@gmail.com</p>
+                        <p><strong>Username:</strong> Gcina</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Course Progress Section -->
+            <section id="progress" class="section">
+                <h2>Course Progress</h2>
+                <div class="progress-container">
+                    <div class="course">
+                        <p>HTML Course</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;"></div>
+                        </div>
+                        <span>75% Complete</span>
+                    </div>
+
+                    <div class="course">
+                        <p>CSS Course</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 50%;"></div>
+                        </div>
+                        <span>50% Complete</span>
+                    </div>
+
+                    <div class="course">
+                        <p>JavaScript Course</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 25%;"></div>
+                        </div>
+                        <span>25% Complete</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Settings Section -->
+            <section id="settings" class="section">
+                <h2>Account Settings</h2>
+                <button class="btn btn-primary">Change Password</button>
+                <button class="btn btn-secondary">Update Profile Info</button>
+                <button class="btn btn-danger">Delete Account</button>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Code Heads Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
