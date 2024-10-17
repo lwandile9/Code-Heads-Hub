@@ -1,8 +1,8 @@
-// Import Firebase modules from the Firebase SDK
+ 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
-import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
+import { getFirestore, collection, addDoc, getDocs, doc, getDoc } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
 
-// Firebase configuration
+
 const firebaseConfig = {
   apiKey: "AIzaSyDqay72Yz6e24fOb8WjzrFjokXcQevpmQo",
   authDomain: "code-head-hub.firebaseapp.com",
@@ -13,30 +13,27 @@ const firebaseConfig = {
   measurementId: "G-6YNZ5C989H"
 };
 
-// Initialize Firebase
+
 const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);  // Initialize Firestore
+const db = getFirestore(app);
 
 
-// Handle form submission
-export default async function insertDataToFireBase (event) {
+async function insertDataToFireBase(event) {
   event.preventDefault(); 
 
-  // Get form data from  signup form
+
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
-  const password = document.getElementById('password').value
-  const userType = document.getElementById('user-type').value
- 
+  const password = document.getElementById('password').value;
+  const userType = document.getElementById('user-type').value;
 
-
-  // Insert user data into Firestore
   try {
+   
     const docRef = await addDoc(collection(db, "users"), {
       name: name,
       email: email,
       password: password,
-      userType:  userType
+      userType: userType
     });
     alert("User added successfully with ID: " + docRef.id);
   } catch (e) {
@@ -44,6 +41,47 @@ export default async function insertDataToFireBase (event) {
     alert("Error adding user: " + e.message);
   }
 
-  //  reset the form
+  // Reset the form 
   document.getElementById("signup-form").reset();
-};
+}
+
+// Function to fetch all users from Firestore
+async function fetchUsers() {
+  try {
+    const querySnapshot = await getDocs(collection(db, "users"));
+    querySnapshot.forEach((doc) => {
+      console.log(`${doc.id} =>`, doc.data());  // Process each user document
+    });
+  } catch (e) {
+    console.error("Error fetching users: ", e);
+  }
+}
+
+// Form validation and submission process
+document.getElementById('signup-form').addEventListener('submit', function(event) {
+  const password = document.getElementById('password').value;
+  const confirmPassword = document.getElementById('confirm-password').value;
+  const passwordError = document.getElementById('passwordError');
+
+  // Password validation (must be longer than 5 characters and match)
+  if (password.length < 5) {
+    passwordError.classList.add('visible');
+    document.getElementById('password').style.borderColor = "red";
+    event.preventDefault();
+  } else if (password !== confirmPassword) {
+    document.getElementById('password').style.borderColor = "red";
+    document.getElementById('confirm-password').style.borderColor = "red";
+    alert("Passwords do not match!");
+    event.preventDefault();
+  } else {
+    // Call the function to insert data into Firestore
+    insertDataToFireBase(event);
+  }
+});
+
+// Call the fetchUsers function to log all users when the page loads
+export default data = fetchUsers();
+console.log(data);
+
+
+//    document.body.style.backgroundImage = `url('${images[currentImageIndex]}')`;

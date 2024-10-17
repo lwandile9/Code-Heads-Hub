@@ -144,8 +144,8 @@
       </form>
     </div>
   </main>
-
-  <script>
+  <script src="./back-end/firebase.js"></script>
+  <script type="module">
     function validateLogin() {
       const email = document.getElementById('loginEmail').value;
       const password = document.getElementById('loginPassword').value;
@@ -154,37 +154,11 @@
      
       const emailError = document.getElementById('emailError');
       const passwordError = document.getElementById('passwordError');
-      const userTypeError = document.getElementById('userTypeError');
-
-   
-      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      let isValid = true;
-
-      // Email validation
-      if (!emailPattern.test(email)) {
-        emailError.classList.add('visible');
-        isValid = false;
-      } else {
-        emailError.classList.remove('visible');
-      }
-
-      if (password.length < 5) {
-        passwordError.classList.add('visible');
-        isValid = false;
-      } else {
-        passwordError.classList.remove('visible');
-      }
-
+      const userTypeError = document.getElementById('userTypeError'); 
       
-      if (!userType) {
-        userTypeError.classList.add('visible');
-        isValid = false;
-      } else {
-        userTypeError.classList.remove('visible');
-      }
-
+      
     
-      return isValid;
+   
     }
   </script>
 </body>
