@@ -45,19 +45,20 @@ async function insertDataToFireBase(event) {
   document.getElementById("signup-form").reset();
 }
 
-// Function to fetch all users from Firestore
+
 export default async function fetchUsers() {
+  const users = []; 
   try {
     const querySnapshot = await getDocs(collection(db, "users"));
     querySnapshot.forEach((doc) => {
-      console.log(`${doc.id} =>`, doc.data());  // Process each user document
+      users.push({ id: doc.id, ...doc.data() }); 
     });
   } catch (e) {
     console.error("Error fetching users: ", e);
   }
+  return users;
 }
 
-// Call the fetchUsers function to log all users when the page loads
 
 
 
