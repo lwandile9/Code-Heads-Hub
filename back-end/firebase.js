@@ -46,7 +46,7 @@ async function insertDataToFireBase(event) {
 }
 
 // Function to fetch all users from Firestore
-async function fetchUsers() {
+export default async function fetchUsers() {
   try {
     const querySnapshot = await getDocs(collection(db, "users"));
     querySnapshot.forEach((doc) => {
@@ -57,31 +57,8 @@ async function fetchUsers() {
   }
 }
 
-// Form validation and submission process
-document.getElementById('signup-form').addEventListener('submit', function(event) {
-  const password = document.getElementById('password').value;
-  const confirmPassword = document.getElementById('confirm-password').value;
-  const passwordError = document.getElementById('passwordError');
-
-  // Password validation (must be longer than 5 characters and match)
-  if (password.length < 5) {
-    passwordError.classList.add('visible');
-    document.getElementById('password').style.borderColor = "red";
-    event.preventDefault();
-  } else if (password !== confirmPassword) {
-    document.getElementById('password').style.borderColor = "red";
-    document.getElementById('confirm-password').style.borderColor = "red";
-    alert("Passwords do not match!");
-    event.preventDefault();
-  } else {
-    // Call the function to insert data into Firestore
-    insertDataToFireBase(event);
-  }
-});
-
 // Call the fetchUsers function to log all users when the page loads
-export default data = fetchUsers();
-console.log(data);
+
 
 
 //    document.body.style.backgroundImage = `url('${images[currentImageIndex]}')`;
