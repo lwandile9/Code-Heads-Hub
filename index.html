@@ -237,14 +237,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
       
         <section id="courses" class="contentimages container" >
   
-          <figure >
+          <figure id="html-start-learning" >
             <a href="./lms/html/learn-html.html"><img src="./images/courses/HTML.png" alt="" width="200" height="300" title="Click on the course to learn more"></a>
             <figcaption>
               Learn the building blocks of the web with our html course! HTML is the standard markup language used to create web pages. in this course, you will discover how to structure and format content, add multimedia elements  and create interactive web pages
             </figcaption>
           </figure>
   
-          <figure>
+          <figure  id="css-start-learning" >
             <a href="./lms/css/learn-css.html"><img src="/images/courses/CSS.png" alt=""  width="200" height="300" title="Click on the course to learn more"></a>
             <figcaption color="blue">
               Take your web development skills to the next level with our our CSS course! Cascading Style Sheets(CSS) is the language used to control  the layout, visual styling and user experience of web pages. In this course, you'll learn how to create responsive, visually appealing, and engaging web pages.
@@ -252,7 +252,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
             </figcaption>
           </figure>
           
-          <figure>
+          <figure  id="js-start-learning" >
               <a href="./lms/javascript/learn-js.html"><img src="./images/courses/js.png" alt=""  width="200" height="300" title="Click on the course to learn more"></a>
               <figcaption>
                 Unlock the power of JavaScript and take your web development skills to the next level! This is the language of the web, allowing you to create interactive dynamic, and engaging web pages. In this course you will learn the fundamentals of JavaScript and how to use it to enhance your web page.
@@ -625,8 +625,11 @@ User Friendly
       <p class="donate-description">Your donation to our ​learning hub will help create <br> ​a 
         vibrant and inclusive ​space where individuals <br>of ​all ages
          and backgrounds ​can explore, learn, and ​grow.</p>
-       <button class="btn-donate" title="click to donate">
-         <img src="./images/events/donateIcon.svg" alt="donate Button">
+       <button target="_blank"  class="btn-donate" title="click to donate">
+        <a href="https://payf.st/qiw4k">
+ <img src="./images/events/donateIcon.svg" alt="donate Button">
+        </a>
+        
        </button>
      </div>
 
@@ -658,7 +661,8 @@ User Friendly
     </div>
 
 
-    <script  src="./javascripts/home-page-update.js"></script>
+    <script type="module" src="./javascripts/home-page-update.js"></script>
+  
   </footer>
 </body>
 

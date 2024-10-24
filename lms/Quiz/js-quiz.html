@@ -102,8 +102,7 @@ footer {
 </head>
 <body>
     <header>
-        <h1>HTML Quiz</h1>
-        <a href="../html/learn-html.html" style="color: white; ">Back to learning</a>
+        <h1>Test Your JavaScript Knowledge</h1>
     </header>
 
 
@@ -112,95 +111,95 @@ footer {
         <div id="quiz">
             <!-- Question 1 -->
             <div class="quiz-question">
-                <h2>Question 1: What does HTML stand for?</h2>
+                <h2>Question 1: What is JavaScript primarily used for?</h2>
                 <div class="quiz-options">
                     <label>
                         <input type="radio" name="q1" value="0">
-                        Hyperlinks and Text Markup Language
-                    </label>
-                    <label>
-                        <input type="radio" name="q1" value="0">
-                        Home Tool Markup Language
+                        Styling web pages
                     </label>
                     <label>
                         <input type="radio" name="q1" value="1">
-                        Hyper Text Markup Language
+                        Adding interactivity to web pages
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="0">
+                        Structuring web pages
                     </label>
                 </div>
             </div>
 
             <!-- Question 2 -->
             <div class="quiz-question">
-                <h2>Question 2: Which HTML element is used to define the largest heading?</h2>
+                <h2>Question 2:Which of the following is the correct way to declare a JavaScript variable?</h2>
                 <div class="quiz-options">
                     <label>
-                        <input type="radio" name="q2" value="0">
-                        &lt;h4&gt;
-                    </label>
-                    <label>
-                        <input type="radio" name="q2" value="0">
-                        &lt;head&gt;
-                    </label>
-                    <label>
                         <input type="radio" name="q2" value="1">
-                        &lt;h1&gt;
+                        var myVariable;
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="0">
+                        variable myVariable;
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="0">
+                        v myVariable;
                     </label>
                 </div>
             </div>
 
             <!-- Question 3 -->
             <div class="quiz-question">
-                <h2>Question 3: What is the correct HTML element for inserting a line break?</h2>
+                <h2>Question 3: Which of the following is used to display data in the browser’s console?</h2>
                 <div class="quiz-options">
                     <label>
+                        <input type="radio" name="q3" value="0">
+                        console.write()
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="0">
+                        console.display()
+                    </label>
+                    <label>
                         <input type="radio" name="q3" value="1">
-                        &lt;br&gt;
-                    </label>
-                    <label>
-                        <input type="radio" name="q3" value="0">
-                        &lt;break&gt;
-                    </label>
-                    <label>
-                        <input type="radio" name="q3" value="0">
-                        &lt;lb&gt;
+                        console.log()
                     </label>
                 </div>
             </div>
 
             <!-- Question 4 -->
             <div class="quiz-question">
-                <h2>Question 4: Which HTML tag is used to create a hyperlink?</h2>
+                <h2>Question 4: How do you create a function in JavaScript?</h2>
                 <div class="quiz-options">
                     <label>
                         <input type="radio" name="q4" value="0">
-                        &lt;link&gt;
+                        create myFunction()
                     </label>
                     <label>
                         <input type="radio" name="q4" value="1">
-                        &lt;a&gt;
+                        function myFunction()
                     </label>
                     <label>
                         <input type="radio" name="q4" value="0">
-                        &lt;href&gt;
+                        function = myFunction()
                     </label>
                 </div>
             </div>
 
             <!-- Question 5 -->
             <div class="quiz-question">
-                <h2>Question 5: How can you make a numbered list in HTML?</h2>
+                <h2>Question 5: What is the correct way to call a JavaScript function named myFunction?</h2>
                 <div class="quiz-options">
                     <label>
+                        <input type="radio" name="q5" value="0">
+                        call myFunction()
+                    </label>
+                    <label>
                         <input type="radio" name="q5" value="1">
-                        &lt;ol&gt;
+                        myFunction()
                     </label>
                     <label>
                         <input type="radio" name="q5" value="0">
-                        &lt;ul&gt;
-                    </label>
-                    <label>
-                        <input type="radio" name="q5" value="0">
-                        &lt;list&gt;
+                        run myFunction()
                     </label>
                 </div>
             </div>
@@ -237,7 +236,7 @@ for (let i = 1; i <= totalQuestions; i++) {
 
 const percentageScore = (score / totalQuestions) * 100;
 
-const resultMessage = percentageScore >= 70 ? 'Congratulations! you have succesfully completed the quiz, your hard work has paid off "' : 'Thank you for taking the quiz! While you didn’t pass this time, every attempt is a step towards improvement. Consider reviewing the material, and don’t hesitate to try again!'; 
+const resultMessage = percentageScore >= 70 ? 'Congratulations!  You passed. Code heads team "Give This Man a Bells!"' : 'MXM You failed. software development is not for you.. try  doing security or something similar.';
 
 
 document.getElementById('quiz').classList.add('hidden');

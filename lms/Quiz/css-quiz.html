@@ -102,8 +102,7 @@ footer {
 </head>
 <body>
     <header>
-        <h1>HTML Quiz</h1>
-        <a href="../html/learn-html.html" style="color: white; ">Back to learning</a>
+        <h1>Test Your CSS Knowledge</h1>
     </header>
 
 
@@ -112,95 +111,95 @@ footer {
         <div id="quiz">
             <!-- Question 1 -->
             <div class="quiz-question">
-                <h2>Question 1: What does HTML stand for?</h2>
+                <h2>Question 1: What does CSS stand for?</h2>
                 <div class="quiz-options">
                     <label>
-                        <input type="radio" name="q1" value="0">
-                        Hyperlinks and Text Markup Language
-                    </label>
-                    <label>
-                        <input type="radio" name="q1" value="0">
-                        Home Tool Markup Language
-                    </label>
-                    <label>
                         <input type="radio" name="q1" value="1">
-                        Hyper Text Markup Language
+                        Cascading Style Sheets
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="0">
+                        Computer Style Sheets
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="0">
+                        Colorful Style Sheets
                     </label>
                 </div>
             </div>
 
             <!-- Question 2 -->
             <div class="quiz-question">
-                <h2>Question 2: Which HTML element is used to define the largest heading?</h2>
+                <h2>Question 2: Which of the following is the correct syntax to link an external CSS file??</h2>
                 <div class="quiz-options">
                     <label>
-                        <input type="radio" name="q2" value="0">
-                        &lt;h4&gt;
-                    </label>
-                    <label>
-                        <input type="radio" name="q2" value="0">
-                        &lt;head&gt;
-                    </label>
-                    <label>
                         <input type="radio" name="q2" value="1">
-                        &lt;h1&gt;
+                       <code> &lt; link rel="stylesheet" href="style.css" &gt;</code>;
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="0">
+                        <code> &lt; style src="style.css"" &gt;</code>;
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="0">
+                        <code> &lt; stylesheet link="style.css" &gt;</code>;
                     </label>
                 </div>
             </div>
 
             <!-- Question 3 -->
             <div class="quiz-question">
-                <h2>Question 3: What is the correct HTML element for inserting a line break?</h2>
+                <h2>Question 3:What is the correct syntax to apply a class selector in CSS?</h2>
                 <div class="quiz-options">
                     <label>
+                        <input type="radio" name="q3" value="0">
+                        &lt;#classname {}&gt;
+                    </label>
+                    <label>
                         <input type="radio" name="q3" value="1">
-                        &lt;br&gt;
+                        &lt.classname {}&gt;
                     </label>
                     <label>
                         <input type="radio" name="q3" value="0">
-                        &lt;break&gt;
-                    </label>
-                    <label>
-                        <input type="radio" name="q3" value="0">
-                        &lt;lb&gt;
+                        &lt;classname {}&gt;
                     </label>
                 </div>
             </div>
 
             <!-- Question 4 -->
             <div class="quiz-question">
-                <h2>Question 4: Which HTML tag is used to create a hyperlink?</h2>
+                <h2>Question 4:How do you make each word in a text start with a capital letter in CSS?</h2>
                 <div class="quiz-options">
                     <label>
                         <input type="radio" name="q4" value="0">
-                        &lt;link&gt;
+                        &lt;text-transform: uppercase;&gt;
                     </label>
                     <label>
                         <input type="radio" name="q4" value="1">
-                        &lt;a&gt;
+                        &lt;text-transform: capitalize;&gt;
                     </label>
                     <label>
                         <input type="radio" name="q4" value="0">
-                        &lt;href&gt;
+                        &lt;text-transform: lowercase;&gt;
                     </label>
                 </div>
             </div>
 
             <!-- Question 5 -->
             <div class="quiz-question">
-                <h2>Question 5: How can you make a numbered list in HTML?</h2>
+                <h2>Question 5: Which of the following is used to add space between an element's content and its border?</h2>
                 <div class="quiz-options">
                     <label>
+                        <input type="radio" name="q5" value="0">
+                        &lt;margin&gt;
+                    </label>
+                    <label>
                         <input type="radio" name="q5" value="1">
-                        &lt;ol&gt;
+                        &lt;padding&gt;
                     </label>
                     <label>
                         <input type="radio" name="q5" value="0">
-                        &lt;ul&gt;
-                    </label>
-                    <label>
-                        <input type="radio" name="q5" value="0">
-                        &lt;list&gt;
+                        &lt;border&gt;
                     </label>
                 </div>
             </div>
@@ -237,7 +236,7 @@ for (let i = 1; i <= totalQuestions; i++) {
 
 const percentageScore = (score / totalQuestions) * 100;
 
-const resultMessage = percentageScore >= 70 ? 'Congratulations! you have succesfully completed the quiz, your hard work has paid off "' : 'Thank you for taking the quiz! While you didn’t pass this time, every attempt is a step towards improvement. Consider reviewing the material, and don’t hesitate to try again!'; 
+const resultMessage = percentageScore >= 70 ? 'Congratulations!  You passed. Code heads team "Give This Man a Bells!"' : 'MXM You failed. software development is not for you.. try  doing security or something similar.';
 
 
 document.getElementById('quiz').classList.add('hidden');
