@@ -102,7 +102,8 @@ footer {
 </head>
 <body>
     <header>
-        <h1>Test Your HTML Knowledge</h1>
+        <h1>HTML Quiz</h1>
+        <a href="../html/learn-html.html" style="color: white; ">Back to learning</a>
     </header>
 
 
@@ -236,7 +237,7 @@ for (let i = 1; i <= totalQuestions; i++) {
 
 const percentageScore = (score / totalQuestions) * 100;
 
-const resultMessage = percentageScore >= 70 ? 'Congratulations!  You passed. Code heads team "Give This Man a Bells!"' : 'oh no! you failed the test try again';
+const resultMessage = percentageScore >= 70 ? 'Congratulations! you have succesfully completed the quiz, your hard work has paid off "' : 'Thank you for taking the quiz! While you didn’t pass this time, every attempt is a step towards improvement. Consider reviewing the material, and don’t hesitate to try again!'; 
 
 
 document.getElementById('quiz').classList.add('hidden');
