@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Course - Code Heads Hub</title>
-    <link rel="stylesheet" href="./learn-html.css">
+    <link rel="stylesheet" href="./learn-j.s.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
+
 <body>
     <header>
-        <h1>LEARN JavaScript CODE HEADS HUB</h1>
+        <h1>LEARN JAVASCRIPT - CODE HEADS HUB</h1>
 
-        <a href="../profile.html"> <i class="fas fa-user" style="font-size: 2rem; color: rgb(211, 218, 209);" title="click to view your profile"></i></a>
-       
+        <a href="../profile.html"> <i class="fas fa-user" style="font-size: 2rem; color: rgb(211, 218, 209);"
+                title="click to view your profile"></i></a>
+
     </header>
 
     <div class="container">
         <!-- Sidebar Navigation -->
         <nav class="sidebar">
             <ul>
-                <li><a href="#intro" class="nav-link">Introduction to Ja</a></li>
-                <li><a href="#structure" class="nav-link">HTML Structure</a></li>
-                <li><a href="#elements" class="nav-link">HTML Elements</a></li>
-                <li><a href="#attributes" class="nav-link">Attributes</a></li>
-                <li><a href="#links" class="nav-link">Links and Anchors</a></li>
-                <li><a href="#lists" class="nav-link">Lists</a></li>
-                <li><a href="#tables" class="nav-link">HTML Tables</a></li>
-                <li><a href="#forms" class="nav-link">HTML Forms</a></li>
+                <li><a href="#intro" class="nav-link">Introduction to JavaScript</a></li>
+                <li><a href="#structure" class="nav-link">JavaScript Syntax</a></li>
+                <li><a href="#elements" class="nav-link">Variables and Data types</a></li>
+                <li><a href="#attributes" class="nav-link">Operators</a></li>
+                <li><a href="#links" class="nav-link">Functions</a></li>
+                <li><a href="#lists" class="nav-link">Event Handling</a></li>
+                <li><a href="#tables" class="nav-link">Dom manipulation</a></li>
+                <li><a href="#forms" class="nav-link">Promises and Async</a></li>
             </ul>
         </nav>
 
@@ -35,114 +38,239 @@
         <main class="content">
             <!-- Introduction -->
             <section id="intro" class="section">
-                <h2>Introduction to HTML</h2>
-                <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages. It provides the basic structure for web content by defining elements like headings, paragraphs, images, and links.</p>
+                <h2>Introduction to JavaScript</h2>
+                <p>JavaScript is a versatile programming language primarily used for enhancing the interactivity and
+                    functionality of web pages. It allows developers to manipulate HTML and CSS, handle events, validate
+                    forms, create animations, and interact with APIs, providing dynamic user experiences on the web.</p>
+
             </section>
 
             <!-- HTML Structure -->
-            <section id="structure" class="section">
-                <h2>HTML Structure</h2>
-                <p>HTML documents are structured using elements like <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code>. These elements define the layout of the webpage and organize its content.</p>
+            <section id="syntax" class="section">
+                <h2>JavaScript Syntax</h2>
+                <p>JavaScript syntax is the set of rules that defines how JavaScript programs are written. JavaScript
+                    code can be written directly inside HTML documents within <code>&lt;script&gt;</code> tags, or in
+                    separate .js files. It includes variables, functions, control structures, and more.</p>
                 <pre>
-                      &lt;!DOCTYPE html&gt;
-                      &lt;html&gt;
-                          &lt;head&gt;
-                              &lt;title&gt;Page Title&lt;/title&gt;
-                          &lt;/head&gt;
-                          &lt;body&gt;
-                              &lt;h1&gt;This is a Heading&lt;/h1&gt;
-                              &lt;p&gt;This is a paragraph.&lt;/p&gt;
-                          &lt;/body&gt;
-                      &lt;/html&gt;
+                    // Example of JavaScript Syntax
+                    // Declaring a variable
+                    let greeting = "Hello, World!";
+                    
+                    // Function to display the greeting
+                    function displayGreeting() {
+                        console.log(greeting);
+                    }
+                    
+                    // Calling the function
+                    displayGreeting();
                 </pre>
             </section>
 
+
             <!-- HTML Elements -->
             <section id="elements" class="section">
-                <h2>HTML Elements</h2>
-                <p>HTML elements are the building blocks of HTML pages. Each element is represented by a tag, such as <code>&lt;h1&gt;</code> for headings or <code>&lt;p&gt;</code> for paragraphs.</p>
-                <ul>
-                    <li><code>&lt;h1&gt;&lt;/h1&gt;</code>: Defines a top-level heading.</li>
-                    <li><code>&lt;p&gt;&lt;/p&gt;</code>: Defines a paragraph.</li>
-                    <li><code>&lt;a&gt;&lt;/a&gt;</code>: Defines a hyperlink.</li>
-                    <li><code>&lt;img&gt;</code>: Defines an image.</li>
-                </ul>
+                <h2>Variables and Data Types</h2>
+<p>In JavaScript, variables are used to store data that can be referenced and manipulated later in the program. Variables can hold different types of data, such as numbers, strings, objects, and more.</p>
+<ul>
+    <li><code>let</code>: Declares a block-scoped variable.</li>
+    <li><code>const</code>: Declares a block-scoped, read-only constant.</li>
+    <li><code>var</code>: Declares a function-scoped or globally-scoped variable (older syntax).</li>
+</ul>
+<p>JavaScript has the following basic data types:</p>
+<ul>
+    <li><code>String</code>: Represents textual data. Example: <code>let name = "John";</code></li>
+    <li><code>Number</code>: Represents numeric data. Example: <code>let age = 25;</code></li>
+    <li><code>Boolean</code>: Represents true or false. Example: <code>let isStudent = true;</code></li>
+    <li><code>Array</code>: Represents a collection of elements. Example: <code>let colors = ["red", "green", "blue"];</code></li>
+    <li><code>Object</code>: Represents a key-value pair. Example: <code>let person = {name: "John", age: 25};</code></li>
+</ul>
+
             </section>
 
             <!-- Attributes -->
             <section id="attributes" class="section">
-                <h2>HTML Attributes</h2>
-                <p>HTML attributes provide additional information about HTML elements. Attributes are always included in the opening tag and consist of a name and a value, such as <code>href</code> or <code>src</code>.</p>
+                <h2>Operators</h2>
+                <p>JavaScript operators are symbols that are used to perform operations on values or variables. These include arithmetic, assignment, comparison, and logical operators.</p>
                 <pre>
-&lt;a href="https://example.com"&gt;This is a link&lt;/a&gt;
-&lt;img src="image.jpg" alt="A description of the image"&gt;
+                // Arithmetic Operators
+                let sum = 5 + 3; // Addition
+                let difference = 10 - 4; // Subtraction
+                let product = 6 * 7; // Multiplication
+                let quotient = 20 / 5; // Division
+                let remainder = 10 % 3; // Modulus (Remainder)
+                
+                // Assignment Operators
+                let x = 10; // Assigns 10 to x
+                x += 5;    // Adds 5 to x (x = x + 5)
+                x *= 2;    // Multiplies x by 2 (x = x * 2)
+                
+                // Comparison Operators
+                console.log(10 == "10"); // true (Equality, type conversion)
+                console.log(10 === "10"); // false (Strict equality, no type conversion)
+                console.log(5 > 3); // true (Greater than)
+                console.log(5 <= 5); // true (Less than or equal)
+                
+                // Logical Operators
+                let a = true;
+                let b = false;
+                console.log(a && b); // false (Logical AND)
+                console.log(a || b); // true (Logical OR)
+                console.log(!a); // false (Logical NOT)
                 </pre>
+                
             </section>
 
             <!-- Links and Anchors -->
             <section id="links" class="section">
-                <h2>Links and Anchors</h2>
-                <p>HTML links are created using the <code>&lt;a&gt;</code> tag. Links are used to navigate between different pages, documents, or sections of a website.</p>
+                <h2>Functions</h2>
+                <p>In JavaScript, functions are blocks of code designed to perform a particular task. Functions can take input in the form of parameters and can return an output. They help to organize and reuse code effectively.</p>
                 <pre>
-&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;
+                // Function Declaration
+                function greet(name) {
+                    return "Hello, " + name + "!";
+                }
+                
+                // Calling the Function
+                let message = greet("John");
+                console.log(message); // Output: Hello, John!
+                
+                // Function with Multiple Parameters
+                function addNumbers(a, b) {
+                    return a + b;
+                }
+                
+                console.log(addNumbers(5, 10)); // Output: 15
+                
+                // Anonymous Function (Function Expression)
+                let multiply = function(x, y) {
+                    return x * y;
+                };
+                
+                console.log(multiply(4, 3)); // Output: 12
+                
+                // Arrow Function (ES6 Syntax)
+                let divide = (x, y) => x / y;
+                
+                console.log(divide(20, 5)); // Output: 4
                 </pre>
-                <p>You can also create anchors within the same page using the <code>id</code> attribute.</p>
-                <pre>
-&lt;a href="#section"&gt;Go to Section&lt;/a&gt;
-&lt;div id="section"&gt;This is the section&lt;/div&gt;
-                </pre>
+                <p>Functions can also be used to navigate or manipulate different parts of a webpage using DOM methods, enhancing the interactivity of your web application.</p>
+                
             </section>
 
             <!-- Lists -->
             <section id="lists" class="section">
-                <h2>Lists</h2>
-                <p>HTML provides two types of lists: ordered lists (<code>&lt;ol&gt;</code>) and unordered lists (<code>&lt;ul&gt;</code>).</p>
+                <h2>Event Handling</h2>
+                <p>In JavaScript, event handling refers to capturing user actions or events (like clicks, key presses, or mouse movements) and responding to them with predefined functions. Event listeners are used to handle these events, allowing dynamic interaction on web pages.</p>
                 <pre>
-&lt;ul&gt;
-    &lt;li&gt;First item&lt;/li&gt;
-    &lt;li&gt;Second item&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-    &lt;li&gt;First item&lt;/li&gt;
-    &lt;li&gt;Second item&lt;/li&gt;
-&lt;/ol&gt;
+                // Example: Handling a button click event
+                document.getElementById("myButton").addEventListener("click", function() {
+                    alert("Button was clicked!");
+                });
+                
+                // Example: Handling a keypress event
+                document.addEventListener("keydown", function(event) {
+                    if (event.key === "Enter") {
+                        console.log("Enter key was pressed.");
+                    }
+                });
+                
+                // Example: Handling a mouseover event
+                document.getElementById("myElement").addEventListener("mouseover", function() {
+                    this.style.backgroundColor = "yellow";
+                });
+                </pre>
+                <p>JavaScript allows you to attach event handlers to HTML elements, enabling interaction between the user and the web page.</p>
+                
                 </pre>
             </section>
 
             <!-- HTML Tables -->
             <section id="tables" class="section">
-                <h2>HTML Tables</h2>
-                <p>Tables in HTML are created using the <code>&lt;table&gt;</code> element, along with <code>&lt;tr&gt;</code> for rows and <code>&lt;td&gt;</code> for cells.</p>
+                <h2>DOM Manipulation</h2>
+                <p>In JavaScript, the Document Object Model (DOM) represents the structure of an HTML document as a tree of nodes. JavaScript can be used to manipulate the DOM by adding, removing, or modifying elements dynamically, which allows for real-time updates to a webpage.</p>
                 <pre>
-&lt;table&gt;
-    &lt;tr&gt;
-        &lt;th&gt;Header 1&lt;/th&gt;
-        &lt;th&gt;Header 2&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
-        &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;
+                // Selecting an element
+                let heading = document.getElementById("myHeading");
+                
+                // Modifying the text content of an element
+                heading.textContent = "Updated Heading Text";
+                
+                // Creating a new element and appending it to the DOM
+                let newParagraph = document.createElement("p");
+                newParagraph.textContent = "This is a new paragraph.";
+                document.body.appendChild(newParagraph);
+                
+                // Removing an element from the DOM
+                let elementToRemove = document.getElementById("removeMe");
+                elementToRemove.remove();
+                
+                // Modifying the style of an element
+                let box = document.getElementById("box");
+                box.style.backgroundColor = "lightblue";
+                box.style.width = "200px";
+                box.style.height = "200px";
+                </pre>
+                <p>Using JavaScript, you can dynamically manipulate the structure, content, and style of HTML elements in response to user interactions or other events, making web pages more interactive.</p>
+                
                 </pre>
             </section>
 
             <!-- HTML Forms -->
             <section id="forms" class="section">
-                <h2>HTML Forms</h2>
-                <p>Forms allow users to input data and send it to a server. HTML forms are created using the <code>&lt;form&gt;</code> element, and input fields are created with tags like <code>&lt;input&gt;</code> and <code>&lt;textarea&gt;</code>.</p>
-                <pre>
-&lt;form action="/submit" method="post"&gt;
-    &lt;label for="name"&gt;Name:&lt;/label&gt;
-    &lt;input type="text" id="name" name="name"&gt;
-    
-    &lt;label for="email"&gt;Email:&lt;/label&gt;
-    &lt;input type="email" id="email" name="email"&gt;
-    
-    &lt;input type="submit" value="Submit"&gt;
-&lt;/form&gt;
-                </pre>
+                <h2>Promises and Async</h2>
+<p>In JavaScript, promises are used to handle asynchronous operations. A promise represents a value that may be available now, in the future, or never. The <code>async</code> and <code>await</code> keywords simplify working with promises, making asynchronous code easier to read and write.</p>
+<pre>
+// Creating a Promise
+let promise = new Promise((resolve, reject) => {
+    let success = true;
+    if (success) {
+        resolve("Operation successful!");
+    } else {
+        reject("Operation failed.");
+    }
+});
+
+// Handling a Promise
+promise.then((message) => {
+    console.log(message);  // Output: Operation successful!
+}).catch((error) => {
+    console.error(error);  // Output: Operation failed.
+});
+
+// Async/Await Example
+async function fetchData() {
+    try {
+        let response = await fetch("https://api.example.com/data");
+        let data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.error("Error fetching data:", error);
+    }
+}
+
+fetchData();
+</pre>
+<p>Promises and <code>async/await</code> allow for more readable and manageable asynchronous code, especially when handling tasks like API calls, file operations, or other time-consuming processes.</p>
+
+
+          <hr>
+
+            </section>
+
+
+            <section id="forms">
+                 <h2>Additional Resources</h2>     
+
+                 <iframe width="340" height="200"  src="https://www.youtube.com/embed/ACaT1Gfhe6I?si=BEW0w3e6HPDTff2Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                 <iframe width="340" height="200" style="margin-left: 30px;" src="https://www.youtube.com/embed/PgZ9npYJZzU?si=XVpe38kov4E-rqEe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                 <iframe width="340" height="200" style="margin-top: 20px;" src="https://www.youtube.com/embed/NOzi4wBHn0o?si=O1Ty5NSrbmwmJ0xl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                 <iframe width="340" height="200" style="margin-left: 30px;" src="https://www.youtube.com/embed/3xYd9fJ_0Z8?si=PIg3SxKUYZJgTQNB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                
+
             </section>
         </main>
     </div>
@@ -150,4 +278,5 @@
 
     <script src="./learn-html.js"></script>
 </body>
+
 </html>

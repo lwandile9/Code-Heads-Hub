@@ -12,8 +12,7 @@
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/footer.css">
 
-  <link rel="stylesheet" 
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
   <style>
     body {
@@ -112,7 +111,6 @@
       cursor: pointer;
       text-decoration: none;
     }
-
   </style>
 </head>
 <body>
@@ -120,16 +118,14 @@
   <main>
     <div class="contact-form-container">
       <h1 class="create-account">Sign in</h1>
-      <form class="login-form" onsubmit="return validateLogin()">
+      <form id="login-form" class="login-form" onsubmit="event.preventDefault();">
         <div class="form-group">
           <label for="email">Email</label>
           <input type="email" id="loginEmail" name="email" required>
-          <p id="emailError" class="error-message">Please enter a valid email address.</p>
         </div>
         <div class="form-group">
           <label for="password">Password</label>
           <input type="password" id="loginPassword" name="password" required minlength="5">
-          <p id="passwordError" class="error-message">Password must be at least 5 characters long.</p>
         </div>
         <div class="form-group">
           <label for="userType">User Type</label>
@@ -138,54 +134,85 @@
             <option value="student">Student</option>
             <option value="mentor">Mentor</option>
           </select>
-          <p id="userTypeError" class="error-message">Please select a user type.</p>
         </div>
-        <button type="submit" class="submit-btn">Sign-in</button>
+        <button id="loginButton" type="submit" class="submit-btn">Sign in</button>
+        <div class="error-message" id="error-message">Invalid email or password</div>
       </form>
     </div>
   </main>
 
-  <script>
-    function validateLogin() {
-      const email = document.getElementById('loginEmail').value;
-      const password = document.getElementById('loginPassword').value;
-      const userType = document.getElementById('userType').value;
-
-     
-      const emailError = document.getElementById('emailError');
-      const passwordError = document.getElementById('passwordError');
-      const userTypeError = document.getElementById('userTypeError');
-
-   
-      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      let isValid = true;
-
-      // Email validation
-      if (!emailPattern.test(email)) {
-        emailError.classList.add('visible');
-        isValid = false;
-      } else {
-        emailError.classList.remove('visible');
-      }
-
-      if (password.length < 5) {
-        passwordError.classList.add('visible');
-        isValid = false;
-      } else {
-        passwordError.classList.remove('visible');
-      }
-
-      
-      if (!userType) {
-        userTypeError.classList.add('visible');
-        isValid = false;
-      } else {
-        userTypeError.classList.remove('visible');
-      }
-
+  <script type="module">
+    import fetchUsers from './back-end/firebase.js'; 
     
-      return isValid;
+
+    // Function to initialize the app and fetch user data
+    async function initializeApp() {
+        try {
+            const userData  = await fetchUsers(); // Fetch users from Firebase
+            document.getElementById('loginButton').addEventListener('click', () => validateLogin(userData)); 
+            console.log()
+        } catch (error) {
+            console.error('Error fetching data:', error);
+            alert('Failed to load user data. Please try again later.');
+        }
     }
-  </script>
+
+    // Function to validate login form input and check credentials
+    function validateLogin(userData) {
+        const email = document.getElementById('loginEmail').value.trim(); 
+        const password = document.getElementById('loginPassword').value.trim();
+  
+        // Clear any previous error message
+        const errorMessage = document.getElementById('error-message');
+        errorMessage.classList.remove('visible');
+
+        // Basic input validation
+        if (!email || !password) {
+            alert('Inputs must not be empty');
+            return;
+        }
+  
+        console.log('Email:', email, 'Password:', password);
+  
+        // Call login function to verify user credentials
+        const user = login(email, password, userData);
+        if (user) {
+            console.log('Login successful:', user);
+            alert(`Welcome, ${user.name}!`);
+           
+           window.location.href = '/index.html';
+        } else {
+            console.log('Invalid email or password');
+            errorMessage.textContent = 'Invalid email or password'; // Set the error message
+            errorMessage.classList.add('visible'); // Make the error visible
+        }
+    }
+  
+    // Function to match login credentials with the user data
+    function login(inputEmail, inputPassword, userData) {
+    for (const userId in userData) {
+        const user = userData[userId]; // Get each user object
+        
+        console.log('Checking user:', user); // Log user details for debugging
+        
+        // Check if the provided credentials match any user
+        if (user.email.toLowerCase().trim() === inputEmail.toLowerCase().trim() &&
+            user.password === inputPassword.trim()) {
+          localStorage.setItem('users', JSON.stringify(user));
+            return user; // Return the matching user
+        }
+    }
+    return null; // No user found with the given credentials
+}
+
+
+
+    // Initialize the app when the script loads
+    initializeApp();
+</script>
+
+
+
+  
 </body>
 </html>
