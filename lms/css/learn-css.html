@@ -193,5 +193,19 @@
 
 
     <script src="./learn-html.js"></script>
+
+    <script type="module">
+
+            import {getSessionData}  from '../../back-end/sessionManager.js';
+
+             let  userData = getSessionData;
+             let name  = userData[0];
+
+              if(!name){
+                window.location.href = '../../login.html'; // Redirect to the login page
+              }
+
+
+     </script>
 </body>
 </html>
