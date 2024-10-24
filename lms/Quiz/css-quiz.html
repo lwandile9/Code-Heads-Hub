@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Quiz - Code Heads Hub</title>
+    <link rel="stylesheet" href="quiz.css">
+
+
+    <style>
+
+      /* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+header {
+  background-color: #0d420f;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+h2 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.quiz-question {
+  margin-bottom: 2rem;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.quiz-options label {
+  margin-bottom: 0.5rem;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Button Styles */
+.btn {
+  background-color: #22640e;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #3c580f;
+}
+
+/* Result Section */
+.hidden {
+  display: none;
+}
+
+.result-section {
+  text-align: center;
+}
+
+#score {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  padding: 1rem;
+  background-color: #116814;
+  color: white;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Test Your CSS Knowledge</h1>
+    </header>
+
+
+
+    <div class="quiz-container">
+        <div id="quiz">
+            <!-- Question 1 -->
+            <div class="quiz-question">
+                <h2>Question 1: What does CSS stand for?</h2>
+                <div class="quiz-options">
+                    <label>
+                        <input type="radio" name="q1" value="1">
+                        Cascading Style Sheets
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="0">
+                        Computer Style Sheets
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="0">
+                        Colorful Style Sheets
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="quiz-question">
+                <h2>Question 2: Which of the following is the correct syntax to link an external CSS file??</h2>
+                <div class="quiz-options">
+                    <label>
+                        <input type="radio" name="q2" value="1">
+                       <code> &lt; link rel="stylesheet" href="style.css" &gt;</code>;
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="0">
+                        <code> &lt; style src="style.css"" &gt;</code>;
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="0">
+                        <code> &lt; stylesheet link="style.css" &gt;</code>;
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="quiz-question">
+                <h2>Question 3:What is the correct syntax to apply a class selector in CSS?</h2>
+                <div class="quiz-options">
+                    <label>
+                        <input type="radio" name="q3" value="0">
+                        &lt;#classname {}&gt;
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="1">
+                        &lt.classname {}&gt;
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="0">
+                        &lt;classname {}&gt;
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="quiz-question">
+                <h2>Question 4:How do you make each word in a text start with a capital letter in CSS?</h2>
+                <div class="quiz-options">
+                    <label>
+                        <input type="radio" name="q4" value="0">
+                        &lt;text-transform: uppercase;&gt;
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="1">
+                        &lt;text-transform: capitalize;&gt;
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="0">
+                        &lt;text-transform: lowercase;&gt;
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="quiz-question">
+                <h2>Question 5: Which of the following is used to add space between an element's content and its border?</h2>
+                <div class="quiz-options">
+                    <label>
+                        <input type="radio" name="q5" value="0">
+                        &lt;margin&gt;
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="1">
+                        &lt;padding&gt;
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="0">
+                        &lt;border&gt;
+                    </label>
+                </div>
+            </div>
+
+            <button class="btn" onclick="submitQuiz()">Submit Quiz</button>
+        </div>
+
+        <!-- Quiz Result Section -->
+        <div id="result" class="result-section hidden">
+            <h2>Your Score:</h2>
+            <p id="score"></p>
+            <button class="btn" onclick="retryQuiz()">Try Again</button>
+        </div>
+    </div>
+
+ 
+    <script >
+
+
+function submitQuiz() {
+
+const correctAnswers = [1, 1, 1, 1, 1];
+let score = 0;
+const totalQuestions = correctAnswers.length;
+
+
+for (let i = 1; i <= totalQuestions; i++) {
+    const selectedAnswer = document.querySelector(`input[name="q${i}"]:checked`);
+    if (selectedAnswer && parseInt(selectedAnswer.value) === correctAnswers[i - 1]) {
+        score++;
+    }
+}
+
+
+const percentageScore = (score / totalQuestions) * 100;
+
+const resultMessage = percentageScore >= 70 ? 'Congratulations!  You passed. Code heads team "Give This Man a Bells!"' : 'MXM You failed. software development is not for you.. try  doing security or something similar.';
+
+
+document.getElementById('quiz').classList.add('hidden');
+document.getElementById('result').classList.remove('hidden');
+document.getElementById('score').innerText = `${score} / ${totalQuestions} (${percentageScore.toFixed(0)}%) - ${resultMessage}`;
+}
+
+function retryQuiz() {
+
+document.querySelectorAll('input[type="radio"]').forEach(input => input.checked = false);
+
+document.getElementById('quiz').classList.remove('hidden');
+document.getElementById('result').classList.add('hidden');
+}
+
+
+
+
+    </script>
+</body>
+</html>
