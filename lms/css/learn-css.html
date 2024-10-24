@@ -29,7 +29,7 @@
                 <li><a href="#tables" class="nav-link">CSS flexbox </a></li>
                 <li><a href="#forms" class="nav-link">Aditional Resources</a></li>
 
-                <a href="../Quiz/html-quiz.html">
+                <a href="../Quiz/css-quiz.html">
                    <button type="button" style="background-color: rgb(6, 65, 6); border: none; width: 100px; height: 50px;border-radius: 10px; font-size: larger;margin-left: 30px;margin-top: 40px; color: aliceblue; font-weight: bold;" >Quiz</button> 
                 </a>
                 
@@ -201,16 +201,16 @@
 
     <script type="module">
 
-            import {getSessionData}  from '../../back-end/sessionManager.js';
+        import {getSessionData}  from '../../back-end/sessionManager.js';
 
-             let  userData = getSessionData;
-             let name  = userData[0];
+         let  userData = getSessionData();
+         let name  = userData[0];
 
-              if(!name){
-                window.location.href = '../../login.html'; // Redirect to the login page
-              }
+          if(!name){
+            window.location.href = '../../login.html'; // Redirect to the login page
+          }
 
 
-     </script>
+ </script>
 </body>
 </html>

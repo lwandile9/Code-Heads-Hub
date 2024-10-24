@@ -13,5 +13,4 @@ export function getSessionData() {
 export function userLogout() {
   sessionStorage.removeItem('email');
   sessionStorage.removeItem('name');
-  alert("Logging out the user");
 }
