@@ -201,16 +201,16 @@
 
     <script type="module">
 
-            import {getSessionData}  from '../../back-end/sessionManager.js';
+        import {getSessionData}  from '../../back-end/sessionManager.js';
 
-             let  userData = getSessionData;
-             let name  = userData[0];
+         let  userData = getSessionData();
+         let name  = userData[0];
 
-              if(!name){
-                window.location.href = '../../login.html'; // Redirect to the login page
-              }
+          if(!name){
+            window.location.href = '../../login.html'; // Redirect to the login page
+          }
 
 
-     </script>
+ </script>
 </body>
 </html>
