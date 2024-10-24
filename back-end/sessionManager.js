@@ -1,24 +1,17 @@
-
-
-export function setSessionData(email, name){
-
-sessionStorage.setItem('email', email);
-sessionStorage.setItem('name',  name);
-
-}
-export function getSessionData(email, name){
-
-sessionStorage.getItem('email', email);
-sessionStorage.getItem('name',  name);
-
+// Set session storage data
+export function setSessionData(email, name) {
+  sessionStorage.setItem('email', email);
+  sessionStorage.setItem('name', name);
 }
 
+// Get session storage data
+export function getSessionData() {
+  return [sessionStorage.getItem('email'), sessionStorage.getItem('name')];
+}
 
-
-export function  userLogout(email, name){
-
-// Remove a session storage item
-sessionStorage.removeItem(email);
-sessionStorage.removeItem(name);
-
+// Logout function to remove session storage items
+export function userLogout() {
+  sessionStorage.removeItem('email');
+  sessionStorage.removeItem('name');
+  alert("Logging out the user");
 }

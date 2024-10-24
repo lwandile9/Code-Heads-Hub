@@ -144,6 +144,7 @@
   <script type="module">
     import fetchUsers from './back-end/firebase.js'; 
     
+    import  {setSessionData } from './back-end/sessionManager.js'
 
     // Function to initialize the app and fetch user data
     async function initializeApp() {
@@ -178,8 +179,7 @@
         const user = login(email, password, userData);
         if (user) {
             console.log('Login successful:', user);
-            alert(`Welcome, ${user.name}!`);
-           
+            setSessionData(user.name, user.email);
            window.location.href = '/index.html';
         } else {
             console.log('Invalid email or password');
@@ -193,7 +193,7 @@
     for (const userId in userData) {
         const user = userData[userId]; // Get each user object
         
-        console.log('Checking user:', user); // Log user details for debugging
+  
         
         // Check if the provided credentials match any user
         if (user.email.toLowerCase().trim() === inputEmail.toLowerCase().trim() &&

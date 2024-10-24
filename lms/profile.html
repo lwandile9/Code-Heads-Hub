@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Profile - Code Heads Hub</title>
     <link rel="stylesheet" href="./styles/user-profile.css">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      </head>
+      
 </head>
 <body>
     <header>
@@ -18,7 +22,10 @@
             <ul>
                 <li><a href="#profile-info" class="nav-link">Profile Information</a></li>
                 <li><a href="#progress" class="nav-link">Course Progress</a></li>
-                <li><a href="#settings" class="nav-link">Settings</a></li>
+
+                <button class="btn btn-secondary" id="btn-log-out2">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                  </button>
             </ul>
         </nav>
 
@@ -27,13 +34,8 @@
             <!-- Profile Information Section -->
             <section id="profile-info" class="section">
                 <h2>Profile Information</h2>
-                <div class="profile-card">
-                    <img src="./imgs/gcina.png" alt="User Avatar" class="profile-avatar">
-                    <div class="profile-details">
-                        <p><strong>Name:</strong> Gcina ngxowa</p>
-                        <p><strong>Email:</strong> Gcina@gmail.com</p>
-                        <p><strong>Username:</strong> Gcina</p>
-                    </div>
+                <div class="profile-card"  id="profile-container">
+                    
                 </div>
             </section>
 
@@ -67,21 +69,65 @@
                 </div>
             </section>
 
-            <!-- Settings Section -->
-            <section id="settings" class="section">
-                <h2>Account Settings</h2>
-                <button class="btn btn-primary">Change Password</button>
-                <button class="btn btn-secondary">Update Profile Info</button>
-                <button class="btn btn-danger">Delete Account</button>
-            </section>
         </main>
     </div>
 
-    <footer>
+    <footer style="text-align: center;">
         <p>&copy; 2024 Code Heads Hub. All rights reserved.</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script type="module" src="../javascripts/home-page-update.js"></script>
+
+    <script  type="module">
+    
+    
+          import {getSessionData, userLogout}  from '../back-end/sessionManager.js';
+          const sessionDataNow =  getSessionData(); 
+
+     let name = sessionDataNow[0];
+     let email = sessionDataNow[1];
+     let src = '';
+
+      // displaying  user data dynamical
+      
+        if(name==='gcina'){
+
+            src = '../images/developers/gcina.png';
+        }else if(name==='lwandile'){
+           
+            src = '../images/developers/lwandile-profil 1.jfif';
+        }else if(name==='anathi'){
+
+            src = './';
+        }else if(name==='milani'){
+
+            src = '../images/developers/milani.png';
+        }else if(name==='njabulo'){
+
+            src = '../images/developers/njabulo.jpg';
+        }else{
+
+            src ='https://placehold.co/600x400?font=roboto';
+        }
+         
+       
+        document.getElementById('profile-container').innerHTML=`
+         
+
+                <img src="${src}" alt="User Avatar" class="profile-avatar">
+
+                       <div class="profile-details">
+
+                        <p><strong>Name:</strong> ${name}</p>
+                        <p><strong>Email:</strong> ${email}</p>
+                        <p><strong>Username:</strong>${name}</p>
+
+                        </div>
+                   
+        `;
+
+    </script>
+
 </body>
 </html>
 
