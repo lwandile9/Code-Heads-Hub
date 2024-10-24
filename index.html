@@ -327,27 +327,34 @@ User Friendly
               </p>
             </div>
             <div class="FormContainer">
-              <form id="book" method="">
+              <form action="https://api.web3forms.com/submit" method="post">
+                <input type ="hidden" name="access_key" value="8213ec2f-7c0b-4a26-9c8f-11dcbb9ac507">
+
                 <div class="label0">
                   <label for="fullName">Full Name:</label>
-                  <input type="text" id="Fname" required placeholder="Full name"><br>
+                  <input name="text" id="Fname" required placeholder="Full name"><br>
                 </div>
+
                 <div class="label1">
                   <label for="email">Email:</label>
-                  <input type="email" id="Email" required placeholder="example@gmail.com"><br>
+                  <input name="email" id="Email" required placeholder="example@gmail.com"><br>
                 </div>
+
                 <div class="label2">
                   <label for="course">Course:</label>
-                  <input type="text" id="Course" required placeholder="Name of course"><br>
+                  <input name="text" id="Course" required placeholder="Name of course"><br>
                 </div>
+
                 <div class="label3">
                   <label for="duration">Duration:</label>
-                  <input type="text" id="Duration" required placeholder="60 minutes"><br>
+                  <input name="text" id="Duration" required placeholder="60 minutes"><br>
                 </div>
+
                 <div class="label4">
                   <label for="description">Description:</label>
-                  <input type="text" id="Description" required placeholder="Write your description"><br>
+                  <input name="text" id="Description" required placeholder="Write your description"><br>
                 </div>
+
                 <button class="btn">BOOK</button>
               </form>
         
